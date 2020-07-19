@@ -8,6 +8,7 @@ const app = express();
 const path = require('path');
 const bodyParser = require('body-parser')
 const mongoose = require('mongoose');
+const exphbs = require("express-handlebars");
 
 mongoose.connect(process.env.DATABASE_URL, { useUnifiedTopology: true, useNewUrlParser: true }, () => { });
 const db = mongoose.connection;
@@ -20,11 +21,11 @@ db.once('open', () => {
     console.log('connected to database')
 })
 
-
+app.engine("handlebars", exphbs({partialsDir: path.join(__dirname + '/views/partials') } ));
+app.set("view engine", "handlebars");
+app.use(express.static(path.join(__dirname, 'public')));
 app.use(express.json());
-app.get('/', (req,res)=>{
-    res.send('ok ')
-})
+
 app.get('/',(req,res)=>{
      res.render('home')
 })

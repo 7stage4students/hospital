@@ -22,4 +22,4 @@ router.patch('/addmin/update/:id',( req, res )=>{
        res.send('A user has been deleted')
    })
 
-module.express = router
+   module.exports = router

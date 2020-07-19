@@ -14,4 +14,4 @@ const router = express.Router();
         res.send('display the users page')
    });
 
-module.express = router
+   module.exports = router
