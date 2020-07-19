@@ -1,5 +1,7 @@
-require('dotenv').config()
+const dotenv = require('dotenv').config()
 const express = require('express');
+const addminRouter = require('./routes/addmin')
+const userLoginRouter = require('./routes/userLogin')
 const app = express();
 const mongoose = require('mongoose');
 mongoose.connect(process.env.DATABASE_URL, { useUnifiedTopology: true, useNewUrlParser: true }, () => { });
@@ -16,8 +18,11 @@ app.use(express.json());
 app.get('/', (req,res)=>{
     res.send('ok ')
 })
-
-
+app.get('/',(req,res)=>{
+     res.render('home')
+})
+app.use('/patient', addminRouter);
+app.use('/patient', userLoginRouter)
 
 
 app.listen(process.env.PORT, () => {
