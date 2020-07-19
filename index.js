@@ -1,6 +1,9 @@
+
 require('dotenv').config()
 
 const express = require('express');
+const addminRouter = require('./routes/addmin')
+const userLoginRouter = require('./routes/userLogin')
 const app = express();
 const path = require('path');
 const bodyParser = require('body-parser')
@@ -22,6 +25,11 @@ app.use(express.json());
 app.get('/', (req,res)=>{
     res.send('ok ')
 })
+app.get('/',(req,res)=>{
+     res.render('home')
+})
+app.use('/patient', addminRouter);
+app.use('/patient', userLoginRouter)
 
 
 app.listen(process.env.PORT, () => {
