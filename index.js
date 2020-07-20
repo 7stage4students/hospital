@@ -43,4 +43,6 @@ app.use('/user', userLoginRouter)
 app.listen(process.env.PORT, () => {
     console.log("server started");
 });
-
+let user = {id:'122'}
+const qq = require('./utils/qrcode.js');
+console.log(qq(user))
