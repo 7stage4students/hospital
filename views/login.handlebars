@@ -27,11 +27,14 @@
 			</div>
 			<div class="card-body">
 				<form action="/user/login" method="POST">
+				<div class="row col-md-12">
+					<alert class="{{messageClass}} col-md-12 px-2 py-2 text-center mb-3">{{message}}</alert>
+				</div>
 					<div class="input-group form-group">
 						<div class="input-group-prepend">
 							<span class="input-group-text"><i class="fas fa-user"></i></span>
 						</div>
-						<input type="text" class="form-control" placeholder="username" name="username">
+						<input type="email" class="form-control" placeholder="email" name="email">
 						
 					</div>
 					<div class="input-group form-group">
