@@ -1,10 +1,11 @@
 import 'package:dio/dio.dart';
 import 'package:flutter/material.dart';
 import 'package:giffy_dialog/giffy_dialog.dart';
-import 'package:studentmanagement/style/style.dart';
+import 'package:seven_health/style/style.dart';
 
-Future getStudentDetails(BuildContext context, String matricule) async {
-  var url = 'https://seven-student-manager.web.app/student/' + matricule;
+Future getPatientsInfo(BuildContext context, String matricule) async {
+  // var url = 'http://10.0.2.2:8081/admin/patient/' + matricule;
+  var url = 'https://jsonplaceholder.typicode.com/todos/1';
   var dio = Dio();
   // dio.options.connectTimeout = 5000; //5s
   // dio.options.receiveTimeout = 3000;
@@ -12,8 +13,7 @@ Future getStudentDetails(BuildContext context, String matricule) async {
     Response response = await dio.get(url);
     print(response.data);
     //close previous dialog
-    Navigator.of(context).pop();
-    //navigate to new dialog
+
    Navigator.of(context).pushNamed("/manage",
        arguments: response.data);
   } catch (e) {

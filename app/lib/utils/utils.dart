@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:giffy_dialog/giffy_dialog.dart';
-import 'package:studentmanagement/style/style.dart';
+import 'package:seven_health/style/style.dart';
 
 showLoading(BuildContext context){
   return showDialog(
@@ -32,16 +32,15 @@ showLoading(BuildContext context){
 }
 
 
-showLoadingBox(BuildContext context, String matricule){
+showLoadingBox(BuildContext context, String code){
   return showDialog(
-    barrierDismissible: false,
       context: context,
       builder: (_) => NetworkGiffyDialog(
         image: Image.asset(
           "assets/img/loading_cat.gif",
           fit: BoxFit.cover,
         ),
-        title: Text('Searching for '+matricule,
+        title: Text('Searching for '+code,
             textAlign: TextAlign.center,
             style: TextStyle(fontSize: 18.0, fontWeight: FontWeight.w600)),
         description: Text(

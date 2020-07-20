@@ -1,27 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/lasliegeorgesjr/projects/Seven Academy/Attendance Scanner/attendance_scanner/build/app/intermediates/incremental/mergeDebugResources/merged.dir/values-bn/values-bn.xml",
+            "outputFile": "/Users/lasliegeorgesjr/projects/Seven Academy/hospital/app/build/app/intermediates/incremental/mergeDebugResources/merged.dir/values-bn/values-bn.xml",
             "map": [
                 {
-                    "source": "/Users/lasliegeorgesjr/.gradle/caches/transforms-2/files-2.1/211c80220f861c5a799aa9869c25198e/jetified-play-services-basement-16.1.0/res/values-bn/values.xml",
-                    "from": {
-                        "startLines": "4",
-                        "startColumns": "0",
-                        "startOffsets": "247",
-                        "endColumns": "210",
-                        "endOffsets": "457"
-                    },
-                    "to": {
-                        "startLines": "10",
-                        "startColumns": "4",
-                        "startOffsets": "1245",
-                        "endColumns": "210",
-                        "endOffsets": "1451"
-                    }
-                },
-                {
-                    "source": "/Users/lasliegeorgesjr/.gradle/caches/transforms-2/files-2.1/caa1f7fac6692a8b35de86f4931bd8ec/jetified-play-services-base-16.0.1/res/values-bn/values.xml",
+                    "source": "/Users/lasliegeorgesjr/.gradle/caches/transforms-2/files-2.1/c3ce55d01738062c3563abb7ad91f50d/jetified-play-services-base-16.0.1/res/values-bn/values.xml",
                     "from": {
                         "startLines": "4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20",
                         "startColumns": "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0",
@@ -35,6 +18,23 @@
                         "startOffsets": "105,216,407,537,650,846,970,1112,1456,1660,1771,1958,2088,2281,2459,2549,2646",
                         "endColumns": "110,190,129,112,195,123,141,132,203,110,186,129,192,177,89,96,118",
                         "endOffsets": "211,402,532,645,841,965,1107,1240,1655,1766,1953,2083,2276,2454,2544,2641,2760"
+                    }
+                },
+                {
+                    "source": "/Users/lasliegeorgesjr/.gradle/caches/transforms-2/files-2.1/e849acb6c332d518bf3163c533ef783a/jetified-play-services-basement-16.1.0/res/values-bn/values.xml",
+                    "from": {
+                        "startLines": "4",
+                        "startColumns": "0",
+                        "startOffsets": "247",
+                        "endColumns": "210",
+                        "endOffsets": "457"
+                    },
+                    "to": {
+                        "startLines": "10",
+                        "startColumns": "4",
+                        "startOffsets": "1245",
+                        "endColumns": "210",
+                        "endOffsets": "1451"
                     }
                 },
                 {

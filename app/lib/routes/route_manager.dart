@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
-import 'package:studentmanagement/models/student.dart';
-import 'package:studentmanagement/screens/check_code.dart';
-import 'package:studentmanagement/screens/get_matricule.dart';
-import 'package:studentmanagement/screens/home.dart';
-import 'package:studentmanagement/screens/manage.dart';
-import 'package:studentmanagement/screens/not_found.dart';
-import 'package:studentmanagement/screens/scan_code.dart';
+import 'package:seven_health/screens/check_code/check_code.dart';
+import 'package:seven_health/screens/home/home_screen.dart';
+import 'package:seven_health/screens/insert_code/insert_code_screen.dart';
+import 'package:seven_health/screens/manage/manage_screen.dart';
+import 'package:seven_health/screens/not_found/not_found_screen.dart';
+
+import 'package:seven_health/screens/scan_code/scan_code_screen.dart';
 
 class RouteGenerator {
   static Route<dynamic> generateRoute(RouteSettings settings) {
@@ -13,22 +13,25 @@ class RouteGenerator {
 
     switch (settings.name) {
       case "/":
-        return MaterialPageRoute(builder: (_) => HomeScreen());
+        return MaterialPageRoute(settings:RouteSettings(name: "/"),builder: (_) => HomeScreen());
         break;
       case "/notFound":
         return MaterialPageRoute(builder: (_) => NotFoundScreen());
         break;
-      case "/get-matricule":
-        return MaterialPageRoute(builder: (_) => GetMatricule());
+      case "/insertCode":
+        return MaterialPageRoute(builder: (_) => InsertCodeScreen());
         break;
-      case "/scan-code":
-        return MaterialPageRoute(builder: (_) => ScanCode());
+      case "/scanCode":
+        return MaterialPageRoute( settings: RouteSettings(name: "/scanCode"),
+        builder: (_) => ScanCodeScreen());
         break;
       case "/manage":
         return MaterialPageRoute(builder: (_) => ManageScreen(data: args));
         break;
       case "/checkCode":
-        return MaterialPageRoute(builder: (_) => CheckCodeScreen(code: args));
+        if (args is String)
+          return MaterialPageRoute(settings:RouteSettings(name: "/checkCode"),builder: (_) => CheckCodeScreen(code: args));
+        break;
 
       default:
         return MaterialPageRoute(builder: (_) => HomeScreen());

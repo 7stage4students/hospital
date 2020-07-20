@@ -1,12 +1,13 @@
 import 'package:flutter/material.dart';
-import 'package:studentmanagement/style/style.dart';
+import 'package:seven_health/style/style.dart';
 
 class StandardButton extends StatelessWidget {
 final String btnText;
 final Color btnColor;
+final VoidCallback onPress;
 
 
-  const StandardButton({Key key, this.btnText, this.btnColor}) : super(key: key);
+  const StandardButton({Key key, this.btnText, this.btnColor,  this.onPress}) : super(key: key);
 
   
 
@@ -20,7 +21,7 @@ final Color btnColor;
     shape: RoundedRectangleBorder(
       borderRadius: BorderRadius.circular(8.0),
     ),
-    onPressed: () {  },
+    onPressed: onPress,
     child: Container(
       width: screenWidth(context) / 1.2,
       height: 60,

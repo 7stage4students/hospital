@@ -43,4 +43,10 @@ router.patch('/addmin/update/:id',( req, res )=>{
        res.send('A user has been deleted')
    })
 
+   router.get("/patient/:code", (req, res)=>{
+       var patientsCode = req.params.code;
+       console.log(`searching for patient with code ${patientsCode}`);
+       res.send(req.params.code);
+   });
+
    module.exports = router

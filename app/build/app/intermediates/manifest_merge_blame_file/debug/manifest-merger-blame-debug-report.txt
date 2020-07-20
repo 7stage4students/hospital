@@ -1,6 +1,6 @@
 1<?xml version="1.0" encoding="utf-8"?>
 2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
-3    package="com.sevenadvancedacademy.studentmanagement"
+3    package="com.sevenadvancedacademy.seven_health"
 4    android:versionCode="1"
 5    android:versionName="1.0.0" >
 6
@@ -12,18 +12,18 @@
 12         to allow setting breakpoints, to provide hot reload, etc.
 13    -->
 14    <uses-permission android:name="android.permission.INTERNET" />
-14-->/Users/lasliegeorgesjr/projects/Seven Academy/Attendance Scanner/attendance_scanner/android/app/src/debug/AndroidManifest.xml:6:5-66
-14-->/Users/lasliegeorgesjr/projects/Seven Academy/Attendance Scanner/attendance_scanner/android/app/src/debug/AndroidManifest.xml:6:22-64
+14-->/Users/lasliegeorgesjr/projects/Seven Academy/hospital/app/android/app/src/debug/AndroidManifest.xml:6:5-66
+14-->/Users/lasliegeorgesjr/projects/Seven Academy/hospital/app/android/app/src/debug/AndroidManifest.xml:6:22-64
 15    <uses-permission android:name="android.permission.CAMERA" />
-15-->[:flutter_qr_bar_scanner] /Users/lasliegeorgesjr/projects/Seven Academy/Attendance Scanner/attendance_scanner/build/flutter_qr_bar_scanner/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-65
-15-->[:flutter_qr_bar_scanner] /Users/lasliegeorgesjr/projects/Seven Academy/Attendance Scanner/attendance_scanner/build/flutter_qr_bar_scanner/intermediates/library_manifest/debug/AndroidManifest.xml:7:22-62
+15-->[:flutter_qr_bar_scanner] /Users/lasliegeorgesjr/projects/Seven Academy/hospital/app/build/flutter_qr_bar_scanner/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-65
+15-->[:flutter_qr_bar_scanner] /Users/lasliegeorgesjr/projects/Seven Academy/hospital/app/build/flutter_qr_bar_scanner/intermediates/library_manifest/debug/AndroidManifest.xml:7:22-62
 16
 17    <uses-feature
-17-->[:flutter_qr_bar_scanner] /Users/lasliegeorgesjr/projects/Seven Academy/Attendance Scanner/attendance_scanner/build/flutter_qr_bar_scanner/intermediates/library_manifest/debug/AndroidManifest.xml:9:5-11:35
+17-->[:flutter_qr_bar_scanner] /Users/lasliegeorgesjr/projects/Seven Academy/hospital/app/build/flutter_qr_bar_scanner/intermediates/library_manifest/debug/AndroidManifest.xml:9:5-11:35
 18        android:name="android.hardware.camera.autofocus"
-18-->[:flutter_qr_bar_scanner] /Users/lasliegeorgesjr/projects/Seven Academy/Attendance Scanner/attendance_scanner/build/flutter_qr_bar_scanner/intermediates/library_manifest/debug/AndroidManifest.xml:10:9-57
+18-->[:flutter_qr_bar_scanner] /Users/lasliegeorgesjr/projects/Seven Academy/hospital/app/build/flutter_qr_bar_scanner/intermediates/library_manifest/debug/AndroidManifest.xml:10:9-57
 19        android:required="true" />
-19-->[:flutter_qr_bar_scanner] /Users/lasliegeorgesjr/projects/Seven Academy/Attendance Scanner/attendance_scanner/build/flutter_qr_bar_scanner/intermediates/library_manifest/debug/AndroidManifest.xml:11:9-32
+19-->[:flutter_qr_bar_scanner] /Users/lasliegeorgesjr/projects/Seven Academy/hospital/app/build/flutter_qr_bar_scanner/intermediates/library_manifest/debug/AndroidManifest.xml:11:9-32
 20    <!--
 21 io.flutter.app.FlutterApplication is an android.app.Application that
 22         calls FlutterMain.startInitialization(this); in its onCreate method.
@@ -32,30 +32,30 @@
 25         FlutterApplication and put your custom class here.
 26    -->
 27    <application
-27-->/Users/lasliegeorgesjr/projects/Seven Academy/Attendance Scanner/attendance_scanner/android/app/src/main/AndroidManifest.xml:8:5-46:19
+27-->/Users/lasliegeorgesjr/projects/Seven Academy/hospital/app/android/app/src/main/AndroidManifest.xml:8:5-46:19
 28        android:name="io.flutter.app.FlutterApplication"
-28-->/Users/lasliegeorgesjr/projects/Seven Academy/Attendance Scanner/attendance_scanner/android/app/src/main/AndroidManifest.xml:9:9-57
+28-->/Users/lasliegeorgesjr/projects/Seven Academy/hospital/app/android/app/src/main/AndroidManifest.xml:9:9-57
 29        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
 29-->[androidx.core:core:1.1.0] /Users/lasliegeorgesjr/.gradle/caches/transforms-2/files-2.1/a528b13ac93e64cafa3d0480e2c93207/core-1.1.0/AndroidManifest.xml:24:18-86
 30        android:debuggable="true"
 31        android:icon="@mipmap/ic_launcher"
-31-->/Users/lasliegeorgesjr/projects/Seven Academy/Attendance Scanner/attendance_scanner/android/app/src/main/AndroidManifest.xml:11:9-43
+31-->/Users/lasliegeorgesjr/projects/Seven Academy/hospital/app/android/app/src/main/AndroidManifest.xml:11:9-43
 32        android:label="Student Management" >
-32-->/Users/lasliegeorgesjr/projects/Seven Academy/Attendance Scanner/attendance_scanner/android/app/src/main/AndroidManifest.xml:10:9-43
+32-->/Users/lasliegeorgesjr/projects/Seven Academy/hospital/app/android/app/src/main/AndroidManifest.xml:10:9-43
 33        <activity
-33-->/Users/lasliegeorgesjr/projects/Seven Academy/Attendance Scanner/attendance_scanner/android/app/src/main/AndroidManifest.xml:12:9-40:20
-34            android:name="com.sevenadvancedacademy.studentmanagement.MainActivity"
-34-->/Users/lasliegeorgesjr/projects/Seven Academy/Attendance Scanner/attendance_scanner/android/app/src/main/AndroidManifest.xml:13:13-41
+33-->/Users/lasliegeorgesjr/projects/Seven Academy/hospital/app/android/app/src/main/AndroidManifest.xml:12:9-40:20
+34            android:name="com.sevenadvancedacademy.seven_health.MainActivity"
+34-->/Users/lasliegeorgesjr/projects/Seven Academy/hospital/app/android/app/src/main/AndroidManifest.xml:13:13-41
 35            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|smallestScreenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"
-35-->/Users/lasliegeorgesjr/projects/Seven Academy/Attendance Scanner/attendance_scanner/android/app/src/main/AndroidManifest.xml:16:13-163
+35-->/Users/lasliegeorgesjr/projects/Seven Academy/hospital/app/android/app/src/main/AndroidManifest.xml:16:13-163
 36            android:hardwareAccelerated="true"
-36-->/Users/lasliegeorgesjr/projects/Seven Academy/Attendance Scanner/attendance_scanner/android/app/src/main/AndroidManifest.xml:17:13-47
+36-->/Users/lasliegeorgesjr/projects/Seven Academy/hospital/app/android/app/src/main/AndroidManifest.xml:17:13-47
 37            android:launchMode="singleTop"
-37-->/Users/lasliegeorgesjr/projects/Seven Academy/Attendance Scanner/attendance_scanner/android/app/src/main/AndroidManifest.xml:14:13-43
+37-->/Users/lasliegeorgesjr/projects/Seven Academy/hospital/app/android/app/src/main/AndroidManifest.xml:14:13-43
 38            android:theme="@style/LaunchTheme"
-38-->/Users/lasliegeorgesjr/projects/Seven Academy/Attendance Scanner/attendance_scanner/android/app/src/main/AndroidManifest.xml:15:13-47
+38-->/Users/lasliegeorgesjr/projects/Seven Academy/hospital/app/android/app/src/main/AndroidManifest.xml:15:13-47
 39            android:windowSoftInputMode="adjustResize" >
-39-->/Users/lasliegeorgesjr/projects/Seven Academy/Attendance Scanner/attendance_scanner/android/app/src/main/AndroidManifest.xml:18:13-55
+39-->/Users/lasliegeorgesjr/projects/Seven Academy/hospital/app/android/app/src/main/AndroidManifest.xml:18:13-55
 40
 41            <!--
 42                 Specifies an Android theme to apply to this Activity as soon as
@@ -64,11 +64,11 @@
 45                 to determine the Window background behind the Flutter UI.
 46            -->
 47            <meta-data
-47-->/Users/lasliegeorgesjr/projects/Seven Academy/Attendance Scanner/attendance_scanner/android/app/src/main/AndroidManifest.xml:23:13-26:17
+47-->/Users/lasliegeorgesjr/projects/Seven Academy/hospital/app/android/app/src/main/AndroidManifest.xml:23:13-26:17
 48                android:name="io.flutter.embedding.android.NormalTheme"
-48-->/Users/lasliegeorgesjr/projects/Seven Academy/Attendance Scanner/attendance_scanner/android/app/src/main/AndroidManifest.xml:24:15-70
+48-->/Users/lasliegeorgesjr/projects/Seven Academy/hospital/app/android/app/src/main/AndroidManifest.xml:24:15-70
 49                android:resource="@style/NormalTheme" />
-49-->/Users/lasliegeorgesjr/projects/Seven Academy/Attendance Scanner/attendance_scanner/android/app/src/main/AndroidManifest.xml:25:15-52
+49-->/Users/lasliegeorgesjr/projects/Seven Academy/hospital/app/android/app/src/main/AndroidManifest.xml:25:15-52
 50            <!--
 51                 Displays an Android View that continues showing the launch screen
 52                 Drawable until Flutter paints its first frame, then this splash
@@ -77,21 +77,21 @@
 55                 Flutter's first frame.
 56            -->
 57            <meta-data
-57-->/Users/lasliegeorgesjr/projects/Seven Academy/Attendance Scanner/attendance_scanner/android/app/src/main/AndroidManifest.xml:32:13-35:17
+57-->/Users/lasliegeorgesjr/projects/Seven Academy/hospital/app/android/app/src/main/AndroidManifest.xml:32:13-35:17
 58                android:name="io.flutter.embedding.android.SplashScreenDrawable"
-58-->/Users/lasliegeorgesjr/projects/Seven Academy/Attendance Scanner/attendance_scanner/android/app/src/main/AndroidManifest.xml:33:15-79
+58-->/Users/lasliegeorgesjr/projects/Seven Academy/hospital/app/android/app/src/main/AndroidManifest.xml:33:15-79
 59                android:resource="@drawable/launch_background" />
-59-->/Users/lasliegeorgesjr/projects/Seven Academy/Attendance Scanner/attendance_scanner/android/app/src/main/AndroidManifest.xml:34:15-61
+59-->/Users/lasliegeorgesjr/projects/Seven Academy/hospital/app/android/app/src/main/AndroidManifest.xml:34:15-61
 60
 61            <intent-filter>
-61-->/Users/lasliegeorgesjr/projects/Seven Academy/Attendance Scanner/attendance_scanner/android/app/src/main/AndroidManifest.xml:36:13-39:29
+61-->/Users/lasliegeorgesjr/projects/Seven Academy/hospital/app/android/app/src/main/AndroidManifest.xml:36:13-39:29
 62                <action android:name="android.intent.action.MAIN" />
-62-->/Users/lasliegeorgesjr/projects/Seven Academy/Attendance Scanner/attendance_scanner/android/app/src/main/AndroidManifest.xml:37:17-68
-62-->/Users/lasliegeorgesjr/projects/Seven Academy/Attendance Scanner/attendance_scanner/android/app/src/main/AndroidManifest.xml:37:25-66
+62-->/Users/lasliegeorgesjr/projects/Seven Academy/hospital/app/android/app/src/main/AndroidManifest.xml:37:17-68
+62-->/Users/lasliegeorgesjr/projects/Seven Academy/hospital/app/android/app/src/main/AndroidManifest.xml:37:25-66
 63
 64                <category android:name="android.intent.category.LAUNCHER" />
-64-->/Users/lasliegeorgesjr/projects/Seven Academy/Attendance Scanner/attendance_scanner/android/app/src/main/AndroidManifest.xml:38:17-76
-64-->/Users/lasliegeorgesjr/projects/Seven Academy/Attendance Scanner/attendance_scanner/android/app/src/main/AndroidManifest.xml:38:27-74
+64-->/Users/lasliegeorgesjr/projects/Seven Academy/hospital/app/android/app/src/main/AndroidManifest.xml:38:17-76
+64-->/Users/lasliegeorgesjr/projects/Seven Academy/hospital/app/android/app/src/main/AndroidManifest.xml:38:27-74
 65            </intent-filter>
 66        </activity>
 67        <!--
@@ -99,33 +99,33 @@
 69             This is used by the Flutter tool to generate GeneratedPluginRegistrant.java
 70        -->
 71        <meta-data
-71-->/Users/lasliegeorgesjr/projects/Seven Academy/Attendance Scanner/attendance_scanner/android/app/src/main/AndroidManifest.xml:43:9-45:33
+71-->/Users/lasliegeorgesjr/projects/Seven Academy/hospital/app/android/app/src/main/AndroidManifest.xml:43:9-45:33
 72            android:name="flutterEmbedding"
-72-->/Users/lasliegeorgesjr/projects/Seven Academy/Attendance Scanner/attendance_scanner/android/app/src/main/AndroidManifest.xml:44:13-44
+72-->/Users/lasliegeorgesjr/projects/Seven Academy/hospital/app/android/app/src/main/AndroidManifest.xml:44:13-44
 73            android:value="2" />
-73-->/Users/lasliegeorgesjr/projects/Seven Academy/Attendance Scanner/attendance_scanner/android/app/src/main/AndroidManifest.xml:45:13-30
+73-->/Users/lasliegeorgesjr/projects/Seven Academy/hospital/app/android/app/src/main/AndroidManifest.xml:45:13-30
 74        <meta-data
-74-->[:flutter_qr_bar_scanner] /Users/lasliegeorgesjr/projects/Seven Academy/Attendance Scanner/attendance_scanner/build/flutter_qr_bar_scanner/intermediates/library_manifest/debug/AndroidManifest.xml:14:9-16:39
+74-->[:flutter_qr_bar_scanner] /Users/lasliegeorgesjr/projects/Seven Academy/hospital/app/build/flutter_qr_bar_scanner/intermediates/library_manifest/debug/AndroidManifest.xml:14:9-16:39
 75            android:name="com.google.android.gms.vision.DEPENDENCIES"
-75-->[:flutter_qr_bar_scanner] /Users/lasliegeorgesjr/projects/Seven Academy/Attendance Scanner/attendance_scanner/build/flutter_qr_bar_scanner/intermediates/library_manifest/debug/AndroidManifest.xml:15:13-70
+75-->[:flutter_qr_bar_scanner] /Users/lasliegeorgesjr/projects/Seven Academy/hospital/app/build/flutter_qr_bar_scanner/intermediates/library_manifest/debug/AndroidManifest.xml:15:13-70
 76            android:value="barcode" />
-76-->[:flutter_qr_bar_scanner] /Users/lasliegeorgesjr/projects/Seven Academy/Attendance Scanner/attendance_scanner/build/flutter_qr_bar_scanner/intermediates/library_manifest/debug/AndroidManifest.xml:16:13-36
+76-->[:flutter_qr_bar_scanner] /Users/lasliegeorgesjr/projects/Seven Academy/hospital/app/build/flutter_qr_bar_scanner/intermediates/library_manifest/debug/AndroidManifest.xml:16:13-36
 77
 78        <activity
-78-->[com.google.android.gms:play-services-base:16.0.1] /Users/lasliegeorgesjr/.gradle/caches/transforms-2/files-2.1/caa1f7fac6692a8b35de86f4931bd8ec/jetified-play-services-base-16.0.1/AndroidManifest.xml:23:9-26:75
+78-->[com.google.android.gms:play-services-base:16.0.1] /Users/lasliegeorgesjr/.gradle/caches/transforms-2/files-2.1/c3ce55d01738062c3563abb7ad91f50d/jetified-play-services-base-16.0.1/AndroidManifest.xml:23:9-26:75
 79            android:name="com.google.android.gms.common.api.GoogleApiActivity"
-79-->[com.google.android.gms:play-services-base:16.0.1] /Users/lasliegeorgesjr/.gradle/caches/transforms-2/files-2.1/caa1f7fac6692a8b35de86f4931bd8ec/jetified-play-services-base-16.0.1/AndroidManifest.xml:24:13-79
+79-->[com.google.android.gms:play-services-base:16.0.1] /Users/lasliegeorgesjr/.gradle/caches/transforms-2/files-2.1/c3ce55d01738062c3563abb7ad91f50d/jetified-play-services-base-16.0.1/AndroidManifest.xml:24:13-79
 80            android:exported="false"
-80-->[com.google.android.gms:play-services-base:16.0.1] /Users/lasliegeorgesjr/.gradle/caches/transforms-2/files-2.1/caa1f7fac6692a8b35de86f4931bd8ec/jetified-play-services-base-16.0.1/AndroidManifest.xml:25:13-37
+80-->[com.google.android.gms:play-services-base:16.0.1] /Users/lasliegeorgesjr/.gradle/caches/transforms-2/files-2.1/c3ce55d01738062c3563abb7ad91f50d/jetified-play-services-base-16.0.1/AndroidManifest.xml:25:13-37
 81            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
-81-->[com.google.android.gms:play-services-base:16.0.1] /Users/lasliegeorgesjr/.gradle/caches/transforms-2/files-2.1/caa1f7fac6692a8b35de86f4931bd8ec/jetified-play-services-base-16.0.1/AndroidManifest.xml:26:13-72
+81-->[com.google.android.gms:play-services-base:16.0.1] /Users/lasliegeorgesjr/.gradle/caches/transforms-2/files-2.1/c3ce55d01738062c3563abb7ad91f50d/jetified-play-services-base-16.0.1/AndroidManifest.xml:26:13-72
 82
 83        <meta-data
-83-->[com.google.android.gms:play-services-basement:16.1.0] /Users/lasliegeorgesjr/.gradle/caches/transforms-2/files-2.1/211c80220f861c5a799aa9869c25198e/jetified-play-services-basement-16.1.0/AndroidManifest.xml:23:9-25:69
+83-->[com.google.android.gms:play-services-basement:16.1.0] /Users/lasliegeorgesjr/.gradle/caches/transforms-2/files-2.1/e849acb6c332d518bf3163c533ef783a/jetified-play-services-basement-16.1.0/AndroidManifest.xml:23:9-25:69
 84            android:name="com.google.android.gms.version"
-84-->[com.google.android.gms:play-services-basement:16.1.0] /Users/lasliegeorgesjr/.gradle/caches/transforms-2/files-2.1/211c80220f861c5a799aa9869c25198e/jetified-play-services-basement-16.1.0/AndroidManifest.xml:24:13-58
+84-->[com.google.android.gms:play-services-basement:16.1.0] /Users/lasliegeorgesjr/.gradle/caches/transforms-2/files-2.1/e849acb6c332d518bf3163c533ef783a/jetified-play-services-basement-16.1.0/AndroidManifest.xml:24:13-58
 85            android:value="@integer/google_play_services_version" />
-85-->[com.google.android.gms:play-services-basement:16.1.0] /Users/lasliegeorgesjr/.gradle/caches/transforms-2/files-2.1/211c80220f861c5a799aa9869c25198e/jetified-play-services-basement-16.1.0/AndroidManifest.xml:25:13-66
+85-->[com.google.android.gms:play-services-basement:16.1.0] /Users/lasliegeorgesjr/.gradle/caches/transforms-2/files-2.1/e849acb6c332d518bf3163c533ef783a/jetified-play-services-basement-16.1.0/AndroidManifest.xml:25:13-66
 86    </application>
 87
 88</manifest>

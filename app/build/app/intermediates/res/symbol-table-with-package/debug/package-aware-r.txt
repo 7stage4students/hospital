@@ -1,4 +1,4 @@
-com.sevenadvancedacademy.studentmanagement
+com.sevenadvancedacademy.seven_health
 attr alpha
 attr buttonSize
 attr circleCrop

@@ -1,10 +1,29 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/lasliegeorgesjr/projects/Seven Academy/Attendance Scanner/attendance_scanner/build/app/intermediates/incremental/mergeDebugResources/merged.dir/values/values.xml",
+            "outputFile": "/Users/lasliegeorgesjr/projects/Seven Academy/hospital/app/build/app/intermediates/incremental/mergeDebugResources/merged.dir/values/values.xml",
             "map": [
                 {
-                    "source": "/Users/lasliegeorgesjr/.gradle/caches/transforms-2/files-2.1/caa1f7fac6692a8b35de86f4931bd8ec/jetified-play-services-base-16.0.1/res/values/values.xml",
+                    "source": "/Users/lasliegeorgesjr/projects/Seven Academy/hospital/app/build/flutter_qr_bar_scanner/intermediates/packaged_res/debug/values/values.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endLines": "9",
+                        "endColumns": "12",
+                        "endOffsets": "511"
+                    },
+                    "to": {
+                        "startLines": "119",
+                        "startColumns": "4",
+                        "startOffsets": "8664",
+                        "endLines": "126",
+                        "endColumns": "12",
+                        "endOffsets": "9120"
+                    }
+                },
+                {
+                    "source": "/Users/lasliegeorgesjr/.gradle/caches/transforms-2/files-2.1/c3ce55d01738062c3563abb7ad91f50d/jetified-play-services-base-16.0.1/res/values/values.xml",
                     "from": {
                         "startLines": "4,5,6,7,8,9,10,11,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,33,46",
                         "startColumns": "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0",
@@ -40,20 +59,22 @@
                     }
                 },
                 {
-                    "source": "/Users/lasliegeorgesjr/.gradle/caches/transforms-2/files-2.1/211c80220f861c5a799aa9869c25198e/jetified-play-services-basement-16.1.0/res/values/values.xml",
+                    "source": "/Users/lasliegeorgesjr/projects/Seven Academy/hospital/app/android/app/src/main/res/values/styles.xml",
                     "from": {
-                        "startLines": "4,7",
-                        "startColumns": "0,0",
-                        "startOffsets": "238,401",
-                        "endColumns": "63,166",
-                        "endOffsets": "301,567"
+                        "startLines": "3,14",
+                        "startColumns": "4,4",
+                        "startOffsets": "134,777",
+                        "endLines": "7,16",
+                        "endColumns": "12,12",
+                        "endOffsets": "426,937"
                     },
                     "to": {
-                        "startLines": "93,103",
+                        "startLines": "114,127",
                         "startColumns": "4,4",
-                        "startOffsets": "5825,7003",
-                        "endColumns": "67,166",
-                        "endOffsets": "5888,7165"
+                        "startOffsets": "8367,9125",
+                        "endLines": "118,129",
+                        "endColumns": "12,12",
+                        "endOffsets": "8659,9285"
                     }
                 },
                 {
@@ -95,41 +116,20 @@
                     }
                 },
                 {
-                    "source": "/Users/lasliegeorgesjr/projects/Seven Academy/Attendance Scanner/attendance_scanner/android/app/src/main/res/values/styles.xml",
+                    "source": "/Users/lasliegeorgesjr/.gradle/caches/transforms-2/files-2.1/e849acb6c332d518bf3163c533ef783a/jetified-play-services-basement-16.1.0/res/values/values.xml",
                     "from": {
-                        "startLines": "3,14",
-                        "startColumns": "4,4",
-                        "startOffsets": "134,777",
-                        "endLines": "7,16",
-                        "endColumns": "12,12",
-                        "endOffsets": "426,937"
+                        "startLines": "4,7",
+                        "startColumns": "0,0",
+                        "startOffsets": "238,401",
+                        "endColumns": "63,166",
+                        "endOffsets": "301,567"
                     },
                     "to": {
-                        "startLines": "114,127",
+                        "startLines": "93,103",
                         "startColumns": "4,4",
-                        "startOffsets": "8367,9125",
-                        "endLines": "118,129",
-                        "endColumns": "12,12",
-                        "endOffsets": "8659,9285"
-                    }
-                },
-                {
-                    "source": "/Users/lasliegeorgesjr/projects/Seven Academy/Attendance Scanner/attendance_scanner/build/flutter_qr_bar_scanner/intermediates/packaged_res/debug/values/values.xml",
-                    "from": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "55",
-                        "endLines": "9",
-                        "endColumns": "12",
-                        "endOffsets": "511"
-                    },
-                    "to": {
-                        "startLines": "119",
-                        "startColumns": "4",
-                        "startOffsets": "8664",
-                        "endLines": "126",
-                        "endColumns": "12",
-                        "endOffsets": "9120"
+                        "startOffsets": "5825,7003",
+                        "endColumns": "67,166",
+                        "endOffsets": "5888,7165"
                     }
                 }
             ]

@@ -212,13 +212,13 @@
       "languageVersion": "2.6"
     },
     {
-      "name": "studentmanagement",
+      "name": "seven_health",
       "rootUri": "../",
       "packageUri": "lib/",
       "languageVersion": "2.7"
     }
   ],
-  "generated": "2020-07-20T10:46:20.511298Z",
+  "generated": "2020-07-20T16:27:00.736319Z",
   "generator": "pub",
   "generatorVersion": "2.8.4"
 }

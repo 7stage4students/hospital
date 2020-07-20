@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:studentmanagement/routes/route_manager.dart';
-import 'package:studentmanagement/style/style.dart';
+import 'package:seven_health/routes/route_manager.dart';
+import 'package:seven_health/style/style.dart';
 
 void main() {
   runApp(MyApp());
