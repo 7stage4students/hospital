@@ -24,16 +24,17 @@
                 <div class="row justify-content-center align-items-center position-relative">
                     <div class="col-sm-3 col-6 col-lg-2 col-xl-2 order-lg-1">
                         <div class="brand">
-                            <a href=""><img src="./newtheme/image/main-logo.png" alt="" /></a>
+                            {{!-- <a href=""><img src="./newtheme/image/main-logo.png" alt="" /></a> --}}
+                            <a href="/" class="logo"><h1>7<span class="health">Health</span></h1></a>
                         </div>
                     </div>
                     <div class="col-sm-8 col-lg-3 col-xl-3 d-none d-sm-block order-lg-3">
                         <div class="header-btns">
                             <div class="btn-1">
-                                <a href="#">Sign In</a>
+                                <a href="/login">Sign In</a>
                             </div>
                             <div class="btn-2">
-                                <a href="#">Get Started</a>
+                                <a href="/signup">Get Started</a>
                             </div>
                         </div>
                     </div>
@@ -42,7 +43,7 @@
                         <div class="main-navigation">
                             <ul class="main-menu">
                                 <li class="menu-item has-dropdown">
-                                    <a href="#features">Home</a>
+                                    <a href="/">Home</a>
                                 </li>
                                 <li class="menu-item smooth-scroll"><a href="#features">Features</a></li>
 
@@ -75,9 +76,9 @@
                                 <form action="">
                                     <div class="form-group">
                                         {{!-- <input type="text" class="form-control" placeholder="Enter your email address"> --}}
-                                        <button class="submit-btn">Get Started</button>
+                                        <button class="submit-btn"><a href="/signup">Get Started</a></button>
                                     </div>
-                                    <p class="form-text">Already using Seven Health? <a href="" class="link">Sign In</a></p>
+                                    <p class="form-text">Already using Seven Health? <a href="/login" class="link">Sign In</a></p>
                                 </form>
                             </div>
                         </div>
@@ -90,7 +91,7 @@
         <!-- Features Area  -->
         <section class="feature-section">
             <div class="shape">
-                <img src="./newtheme/image/landing-1-shape.svg" alt="">
+                <img src="./newtheme/image/landing-1-shape.svg" alt=" and svg of digital operations">
             </div>
             <div class="container">
                 <div class="section-title text-center" id="features">
@@ -218,7 +219,7 @@
                                 <p>Interested to see how it works? Get Started to get to learn everything you
                                     need to know.</p>
                                 <div class="content-btn">
-                                    <a href="#" class="btn btn--primary">Get Started</a>
+                                    <a href="/signup" class="btn btn--primary">Get Started</a>
                                 </div>
                             </div>
                         </div>
@@ -259,7 +260,7 @@
                     <div class="col-xl-4 col-lg-5 col-margin">
                         <div class="single-footer">
                             <div class="footer-title">
-                                <img src="./newtheme/image/footer-logo.png" alt="">
+                                <a href="/" class="logo"><h1>7<span class="health">Health</span></h1></a>
                             </div>
                             <div class="footer-text">
                                 <p>Your health is a priority, remember good health is wealth. So stay health and stay safe</p>
@@ -267,17 +268,17 @@
                             </div>
                             <ul class="footer-social-list">
                                 <li>
-                                    <a href="">
+                                    <a href="https://www.facebook.com/sevenadvancedacademy">
                                         <i class="icon icon-logo-fb-simple"></i>
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="">
+                                    <a href="https://twitter.com/SevenAcademy7">
                                         <i class="icon icon-logo-twitter"></i>
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="">
+                                    <a href="https://sevenadvancedacademy.com/">
                                         <i class="icon icon-google"></i>
                                     </a>
                                 </li>
@@ -290,10 +291,10 @@
                                 <h6>Help Menu</h6>
                             </div>
                             <ul class="footer-list">
-                                <li><a href="">Home</a></li>
-                                <li><a href="">Features</a></li>
-                                <li><a href="">Services</a></li>
-                                <li><a href="">Get Started</a></li>
+                                <li><a href="/">Home</a></li>
+                                <li><a href="#features">Features</a></li>
+                                <li><a href="#services">Services</a></li>
+                                <li><a href="/signup">Get Started</a></li>
                             </ul>
                         </div>
                     </div>

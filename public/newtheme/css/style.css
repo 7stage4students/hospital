@@ -1703,4 +1703,11 @@
 html{
   scroll-behavior: smooth;
 }
+.logo{
+  color: teal;
+}
+.health{
+  color: #000;
+  font-size: 20px;
+}
 /*# sourceMappingURL=style.css.map */
