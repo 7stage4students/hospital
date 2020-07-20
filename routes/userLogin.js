@@ -1,8 +1,22 @@
 const express = require('express');
 const router = express.Router();
-   router.get('/login', (req,res)=>{
-    //    res.render('/login')
-    res.send('Display the login page')
+const auth = require('../controlers/Auth');
+const formidable = require('formidable');
+const form = formidable({ multiples: true });
+let user = {
+     name:'zidane',
+     password:'zidane'
+}
+   router.post('/login', (req,res)=>{
+     form.parse(req, (err, fields, files) => {
+          if (err) {
+              next(err);
+              return;
+          }
+          else{
+             res.render('userpage');
+          }
+      });
    });
     
     router.post('userLogin', (req,res)=>{

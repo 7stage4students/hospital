@@ -1,4 +1,4 @@
-const Doctors = require('../models/doctors');
+const Doctors = require('../models/doctorSchema');
 
 const getHashedPassword = (password) => {
     const sha256 = crypto.createHash('sha256');

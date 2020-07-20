@@ -1,5 +1,4 @@
 const mongoose = require('mongoose');
-// const item = new mongoose.Schema(String);
 
 const doctorSchema = new mongoose.Schema({
     name:{

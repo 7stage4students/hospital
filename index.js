@@ -6,15 +6,18 @@ const addminRouter = require('./routes/addmin')
 const userLoginRouter = require('./routes/userLogin')
 const app = express();
 const path = require('path');
-const bodyParser = require('body-parser')
+
 const mongoose = require('mongoose');
 const exphbs = require("express-handlebars");
 
-mongoose.connect(process.env.DATABASE_URL, { useUnifiedTopology: true, useNewUrlParser: true }, () => { });
+mongoose.connect(process.env.DATABASE_URL, { useUnifiedTopology: true, useNewUrlParser: true }, (err,res) => { 
+    console.log(err)
+   // console.log(res) 
+});
 const db = mongoose.connection;
 
 db.on('error', (err) => {
-    console.error('The error is', err)
+    console.error('The error is', err) 
 });
 
 db.once('open', () => {
@@ -29,8 +32,12 @@ app.use(express.json());
 app.get('/',(req,res)=>{
      res.render('home')
 })
-app.use('/patient', addminRouter);
-app.use('/patient', userLoginRouter)
+
+app.get('/login', (req,res)=>{
+    res.render('login')
+})
+app.use('/admin', addminRouter);
+app.use('/user', userLoginRouter)
 
 
 app.listen(process.env.PORT, () => {
