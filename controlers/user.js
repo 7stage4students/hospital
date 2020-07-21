@@ -39,7 +39,7 @@ exports
 
     jsonFile.writeFileSync(path.join(__dirname, "../", "users.json"), data);
 
-    res.render("userpage");
+    res.render("userpage",user);
   } else
     res.render("login", {
       message: "user not found",
@@ -89,7 +89,7 @@ exports
 
     } catch (err) {
       console.log("An error occured in Svaing he data");
-      res.render("register");
+      res.render("registration");
     }
   }
 };

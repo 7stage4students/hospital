@@ -45,10 +45,7 @@ exports.postAdminLogin = async (fields, res, next) => {
       res.render("adminpage");
     }
   else
-    res.redirect("/adminlogin", {
-      message: "incorrect email or password",
-      messageClass: "alert-danger",
-    });
+    res.redirect("/adminlogin");
 };
 
 //The Controller Bellow is for the user login post request

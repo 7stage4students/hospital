@@ -46,6 +46,15 @@ router.use(express.json())
         res.render('adminlogin');     
  
    })
+   router.get('/data/all',(req, res) =>{
+    console.log('Getting all ');
+    console.log(req.user)
+    if (req.user){
+        getAll(res);
+    }else
+    res.render('adminlogin');     
+
+})
 
    router.get('/patient/:id',( req, res )=>{
        
