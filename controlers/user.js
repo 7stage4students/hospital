@@ -81,8 +81,10 @@ exports
 
     try {
       patient.save();
-      qCode({email,password})
-      storeProfilePic({name: fields.profileName, path: fields.profilePath,type: fields.profileType})
+      const id = patient._id;
+      qCode({email,id:`${id}`})
+      if(fields.profileName)
+        storeProfilePic({name: fields.profileName, path: fields.profilePath,type: fields.profileType})
       res.render("login");
 
     } catch (err) {
