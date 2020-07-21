@@ -10,6 +10,7 @@ exports.
 getAll = async(res)=>{
  
     Patient.find({},(err,result)=>{
+        console.log(result)
         res.send(result)
     })
     
@@ -19,7 +20,7 @@ getAll = async(res)=>{
 //Get By ID
 exports.
 getById = async(id,res) =>{
-    Patient.find({password: id},(err,result)=>{
+    Patient.find({_id: id},(err,result)=>{
         res.send(result)
     })
 }
