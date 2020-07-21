@@ -18,7 +18,8 @@ router.post("/login", (req, res) => {
   });
 });
 
-router.get("/register", (req, res) => {
+router.get("/signup", (req, res) => {
+  console.log(req)
   res.render("register");
 });
 

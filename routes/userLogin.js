@@ -1,6 +1,6 @@
 const express = require('express');
 const router = express.Router();
-const auth = require('../controlers/Auth');
+
 const formidable = require('formidable');
 const form = formidable({ multiples: true });
 let user = {
