@@ -42,7 +42,7 @@ exports.postAdminLogin = async (fields, res, next) => {
 
       jsonFile.writeFileSync(path.join(__dirname, "../", "users.json"), data);
 
-      res.render("adminpage");
+      res.render("admin/dashboard");
     }
   else
     res.redirect("/adminlogin");

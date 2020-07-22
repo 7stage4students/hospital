@@ -20,7 +20,17 @@ router.post("/login", (req, res) => {
     }
   });
 });
+// dashboard and the rest
+router.get("/dashboard", (req, res) => {
+  res.render("user/dashboard");
+});
 
+router.get("/logs", (req, res) => {
+  res.render("user/logs", auth.logs());
+});
+router.get("/profile", (req, res) => {
+  res.render("user/profile", auth.logs());
+});
 router.get("/register", (req, res) => {
   res.render("registration");
 });
@@ -53,11 +63,11 @@ router.post("/register", (req, res) => {
   });
 });
 
-router.get("/profile", (req, res) => {
-  if (req.user) {
-    console.log(req.user);
-    res.send("display the users page");
-  } else res.render("login");
-});
+// router.get("/profile", (req, res) => {
+//   if (req.user) {
+//     console.log(req.user);
+//     res.send("display the users page");
+//   } else res.render("login");
+// });
 
 module.exports = router;

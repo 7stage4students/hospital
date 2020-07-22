@@ -25,6 +25,7 @@ app.set("view engine", "handlebars");
 app.use(express.static(path.join(__dirname, 'public')));
 app.use(express.json());
 
+//app.locals.test = {name:'sdvd'}
 app.get('/',(req,res)=>{
      res.render('home')
 })
