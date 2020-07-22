@@ -46,8 +46,17 @@ const patientSchema = new mongoose.Schema({
     date:{
         type: String,
         default: new Date()
-    }
-})
+    }, 
+    
+},  {
+    toObject: {
+      virtuals: true,
+    },
+    toJSON: {
+      virtuals: true,
+    },
+  })
 
 module.exports =  mongoose.model('patient',patientSchema);
+
 
