@@ -5,6 +5,9 @@ const formidable = require("formidable");
 const form = formidable({ multiples: true });
 const router = express.Router();
 
+router.get("/login", (req, res) => {
+  res.render('login')
+});
 router.post("/login", (req, res) => {
 
   form.parse(req, (err, fields, files) => {
@@ -32,6 +35,7 @@ router.post("/register", (req, res) => {
       return;
     } else {
       console.log("User Login");
+      console.log(fields)
       if (fields.password == fields.confirmPassword) {
         console.log(fields);
         if (files.upload.size){
@@ -41,9 +45,10 @@ router.post("/register", (req, res) => {
              fields.profileName = files.upload.name;
              fields.profileType = files.upload.type;
         } 
+        console.log(fields)
         auth.register(fields, res);
       } else {
-        res.render("register");
+        res.render("registration");
       }
     }
   });
