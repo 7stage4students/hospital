@@ -27,7 +27,7 @@ exports
   if (user) {
     let token = authToken();
     res.cookie("token", token, {
-      maxAge: 6000000,
+      maxAge: 90000000,
     });
 
     let data = jsonFile.readFileSync(path.join(__dirname, "../", "users.json"));
