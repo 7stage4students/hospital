@@ -1,0 +1,146 @@
+{
+  "parserOptions": {
+    // Required for certain syntax usages
+    "ecmaVersion": 2017
+  },
+  "plugins": [
+    "promise"
+  ],
+  "extends": "eslint:recommended",
+  "rules": {
+    // Removed rule "disallow the use of console" from recommended eslint rules
+    "no-console": "off",
+
+    // Removed rule "disallow multiple spaces in regular expressions" from recommended eslint rules
+    "no-regex-spaces": "off",
+
+    // Removed rule "disallow the use of debugger" from recommended eslint rules
+    "no-debugger": "off",
+
+    // Removed rule "disallow unused variables" from recommended eslint rules
+    "no-unused-vars": "off",
+
+    // Removed rule "disallow mixed spaces and tabs for indentation" from recommended eslint rules
+    "no-mixed-spaces-and-tabs": "off",
+
+    // Removed rule "disallow the use of undeclared variables unless mentioned in /*global */ comments" from recommended eslint rules
+    "no-undef": "off",
+
+    // Warn against template literal placeholder syntax in regular strings
+    "no-template-curly-in-string": 1,
+
+    // Warn if return statements do not either always or never specify values
+    "consistent-return": "off",
+
+    //no cond assign
+    "no-cond-assign": "off",
+
+    //
+    "no-redeclare":"off",
+
+    // Warn if no return statements in callbacks of array methods
+    "array-callback-return": "off",
+
+    // Require the use of === and !==
+    "eqeqeq": "off",
+
+    // Disallow the use of alert, confirm, and prompt
+    "no-alert": "off",
+
+    // Disallow the use of arguments.caller or arguments.callee
+    "no-caller": 2,
+
+    ///no empty
+    "no-empty": "off",
+
+    // Disallow null comparisons without type-checking operators
+    "no-eq-null": "off",
+
+    // Disallow the use of eval()
+    "no-eval": "off",
+
+    // Warn against extending native types
+    "no-extend-native": "off",
+
+    // Warn against unnecessary calls to .bind()
+    "no-extra-bind": "off",
+
+    // Warn against unnecessary labels    
+    "no-extra-label": "off",
+    "no-func-assign":"off",
+    // Disallow leading or trailing decimal points in numeric literals
+    "no-floating-decimal": "off",
+
+    // Warn against shorthand type conversions
+    "no-implicit-coercion": "off",
+
+    // Warn against function declarations and expressions inside loop statements
+    "no-loop-func": "off",
+
+    // Disallow new operators with the Function object
+    "no-new-func": "off",
+    "no-extra-boolean-cast":"off",
+    // Warn against new operators with the String, Number, and Boolean objects
+    "no-new-wrappers": "off",
+
+    // Disallow throwing literals as exceptions
+    "no-throw-literal": "off",
+
+    //no useless escape
+    "no-useless-escape":"off",
+
+    "no-self-assign":"off",
+    "no-sparse-arrays":"off",
+    "no-fallthrough":"off",
+
+
+    // Require using Erroer objects as Promise rejection reasons
+    "prefer-promise-reject-errors": 2,
+
+    // Enforce “for” loop update clause moving the counter in the right direction
+    "for-direction": 2,
+
+    // Enforce return statements in getters
+    "getter-return": "off",
+
+    // Disallow await inside of loops
+    "no-await-in-loop": 2,
+
+    // Disallow comparing against -0
+    "no-compare-neg-zero": 2,
+
+    // Warn against catch clause parameters from shadowing variables in the outer scope
+    "no-catch-shadow": "off",
+
+    // Disallow identifiers from shadowing restricted names
+    "no-shadow-restricted-names": 2,
+
+    // Enforce return statements in callbacks of array methods
+    "callback-return": "off",
+
+    // Require error handling in callbacks
+    "handle-callback-err": 2,
+
+    // Warn against string concatenation with __dirname and __filename
+    "no-path-concat": 1,
+
+    //control regex
+    "no-control-regex":"off",
+    "no-extra-semi":"off",
+    "no-prototype-builtins":"off",
+    "no-unsafe-finally":"off",
+
+    // Prefer using arrow functions for callbacks
+    "prefer-arrow-callback": "off",
+
+    // Return inside each then() to create readable and reusable Promise chains.
+    // Forces developers to return console logs and http calls in promises. 
+    "promise/always-return": "off",
+
+    //Enforces the use of catch() on un-returned promises
+    "promise/catch-or-return": "off",
+
+    // Warn against nested then() or catch() statements
+    "promise/no-nesting": 1
+  }
+}
