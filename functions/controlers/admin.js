@@ -1,30 +1,46 @@
 const Doctors = require('../models/doctorSchema');
+const bcrypt = require('bcrypt');
+const Patient = require('../models/patientSchema');
+const crypto= require('crypto');
+const { getHashedPassword } = require("./getHashedPassword");
+const { json } = require('express');
 
-const getHashedPassword = (password) => {
-    const sha256 = crypto.createHash('sha256');
-    const hash = sha256.update(password).digest('base64');
-    return hash;
+
+//GeT All Patients
+exports.
+getAll = async(res)=>{
+        let data = {}
+   // console.log(await Patient.find({}))
+   await Patient.find({},(err,result)=>{
+       // console.log(result)
+      data = JSON.stringify(result)
+    })
+    return   data;
+}
+
+//Get By ID
+exports.
+getById = async(id,res) =>{
+    Patient.find({_id: id},(err,result)=>{
+        res.json(result)
+    })
 }
 
 
-//GET REQUEST TO ADMIN GET PATIENT
-exports.getAddPatient = (req, res, next) => {
-  res.render('adminpage', {
-    pageTitle: 'Add Patient',
-    editing: false
-  });
-};
 
 //ADMIN ADD PATIENT
-exports.postAddPatient = (req, res, next) => {
-const name = req.body.name;
-const email = req.body.email;
-const age = req.body.age;
-const password = getHashedPassword(req.body.password)
-const diseases = req.body.diseases.split(',');
-const test = Array.from(req.body.test)
+exports.postAddPatient = (fields, res, next) => {
+const name = fields.name;
+const email = fields.email;
+const age = fields.age;
+const password = getHashedPassword(fields.password)
+let diseases,test,medicine;
+if(fields.disease){
+    diseases = fields.diseases.split(',');
+    test = Array.from(fields.test)
+    medicine = fields.medicine.split(',');
+}
 
-const medicine = req.body.medicine.split(',');
 
 const patient = new Patient({
     name: name,
@@ -32,7 +48,7 @@ const patient = new Patient({
     age: age,
     password: password,
     diseases: diseases,
-    logs: [{test: test, medicine: medicine}]
+    logs: [{test: [test], medicine: [medicine]}]
   });
 
   patient
@@ -45,6 +61,8 @@ const patient = new Patient({
     .catch(err => {
       console.log(err);
     });
+
+    res.send('Registered Successfullly')
 };
 
 //ADMIN UPDATE PATIENT DETAILS
