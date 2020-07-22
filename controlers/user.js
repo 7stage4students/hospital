@@ -39,7 +39,7 @@ exports
 
     jsonFile.writeFileSync(path.join(__dirname, "../", "users.json"), data);
 
-    res.render("userpage");
+    res.render("userpage",user);
   } else
     res.render("login", {
       message: "user not found",
@@ -81,13 +81,15 @@ exports
 
     try {
       patient.save();
-      qCode({email,id:patient['_id']})
-      storeProfilePic({name: fields.profileName, path: fields.profilePath,type: fields.profileType})
+      const id = patient._id;
+      qCode({email,id:`${id}`})
+      if(fields.profileName)
+        storeProfilePic({name: fields.profileName, path: fields.profilePath,type: fields.profileType})
       res.render("login");
 
     } catch (err) {
       console.log("An error occured in Svaing he data");
-      res.render("register");
+      res.render("registration");
     }
   }
 };
