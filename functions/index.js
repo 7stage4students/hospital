@@ -1,3 +1,4 @@
+const functions = require('firebase-functions');
 
 require('dotenv').config()
 
@@ -40,8 +41,4 @@ app.get('/signup',(req,res)=>{
 app.use('/admin', adminRouter);
 app.use('/user', userRouter)
 
-
-app.listen(process.env.PORT, () => {
-    console.log("server started");
-});
-
+exports.app = functions.https.onRequest(app);
