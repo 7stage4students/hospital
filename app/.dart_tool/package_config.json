@@ -69,7 +69,7 @@
     },
     {
       "name": "flare_flutter",
-      "rootUri": "file:///Users/lasliegeorgesjr/development/flutter/.pub-cache/hosted/pub.dartlang.org/flare_flutter-2.0.4",
+      "rootUri": "file:///Users/lasliegeorgesjr/development/flutter/.pub-cache/hosted/pub.dartlang.org/flare_flutter-2.0.5",
       "packageUri": "lib/",
       "languageVersion": "2.2"
     },
@@ -98,8 +98,14 @@
       "languageVersion": "2.2"
     },
     {
+      "name": "flutter_web_plugins",
+      "rootUri": "file:///Users/lasliegeorgesjr/development/flutter/packages/flutter_web_plugins",
+      "packageUri": "lib/",
+      "languageVersion": "2.0"
+    },
+    {
       "name": "giffy_dialog",
-      "rootUri": "file:///Users/lasliegeorgesjr/development/flutter/.pub-cache/hosted/pub.dartlang.org/giffy_dialog-1.7.0",
+      "rootUri": "file:///Users/lasliegeorgesjr/development/flutter/.pub-cache/hosted/pub.dartlang.org/giffy_dialog-1.8.0",
       "packageUri": "lib/",
       "languageVersion": "2.2"
     },
@@ -144,6 +150,24 @@
       "rootUri": "file:///Users/lasliegeorgesjr/development/flutter/.pub-cache/hosted/pub.dartlang.org/petitparser-2.4.0",
       "packageUri": "lib/",
       "languageVersion": "2.4"
+    },
+    {
+      "name": "platform_detect",
+      "rootUri": "file:///Users/lasliegeorgesjr/development/flutter/.pub-cache/hosted/pub.dartlang.org/platform_detect-1.4.0",
+      "packageUri": "lib/",
+      "languageVersion": "2.4"
+    },
+    {
+      "name": "plugin_platform_interface",
+      "rootUri": "file:///Users/lasliegeorgesjr/development/flutter/.pub-cache/hosted/pub.dartlang.org/plugin_platform_interface-1.0.2",
+      "packageUri": "lib/",
+      "languageVersion": "2.1"
+    },
+    {
+      "name": "pub_semver",
+      "rootUri": "file:///Users/lasliegeorgesjr/development/flutter/.pub-cache/hosted/pub.dartlang.org/pub_semver-1.4.4",
+      "packageUri": "lib/",
+      "languageVersion": "2.0"
     },
     {
       "name": "quiver",
@@ -200,6 +224,36 @@
       "languageVersion": "2.0"
     },
     {
+      "name": "url_launcher",
+      "rootUri": "file:///Users/lasliegeorgesjr/development/flutter/.pub-cache/hosted/pub.dartlang.org/url_launcher-5.5.0",
+      "packageUri": "lib/",
+      "languageVersion": "2.1"
+    },
+    {
+      "name": "url_launcher_linux",
+      "rootUri": "file:///Users/lasliegeorgesjr/development/flutter/.pub-cache/hosted/pub.dartlang.org/url_launcher_linux-0.0.1+1",
+      "packageUri": "lib/",
+      "languageVersion": "2.1"
+    },
+    {
+      "name": "url_launcher_macos",
+      "rootUri": "file:///Users/lasliegeorgesjr/development/flutter/.pub-cache/hosted/pub.dartlang.org/url_launcher_macos-0.0.1+7",
+      "packageUri": "lib/",
+      "languageVersion": "2.1"
+    },
+    {
+      "name": "url_launcher_platform_interface",
+      "rootUri": "file:///Users/lasliegeorgesjr/development/flutter/.pub-cache/hosted/pub.dartlang.org/url_launcher_platform_interface-1.0.7",
+      "packageUri": "lib/",
+      "languageVersion": "2.1"
+    },
+    {
+      "name": "url_launcher_web",
+      "rootUri": "file:///Users/lasliegeorgesjr/development/flutter/.pub-cache/hosted/pub.dartlang.org/url_launcher_web-0.1.2",
+      "packageUri": "lib/",
+      "languageVersion": "2.2"
+    },
+    {
       "name": "vector_math",
       "rootUri": "file:///Users/lasliegeorgesjr/development/flutter/.pub-cache/hosted/pub.dartlang.org/vector_math-2.0.8",
       "packageUri": "lib/",
@@ -218,7 +272,7 @@
       "languageVersion": "2.7"
     }
   ],
-  "generated": "2020-07-20T16:27:00.736319Z",
+  "generated": "2020-07-22T10:40:27.487713Z",
   "generator": "pub",
   "generatorVersion": "2.8.4"
 }

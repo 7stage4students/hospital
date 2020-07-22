@@ -104,28 +104,38 @@
 72-->/Users/lasliegeorgesjr/projects/Seven Academy/hospital/app/android/app/src/main/AndroidManifest.xml:44:13-44
 73            android:value="2" />
 73-->/Users/lasliegeorgesjr/projects/Seven Academy/hospital/app/android/app/src/main/AndroidManifest.xml:45:13-30
-74        <meta-data
-74-->[:flutter_qr_bar_scanner] /Users/lasliegeorgesjr/projects/Seven Academy/hospital/app/build/flutter_qr_bar_scanner/intermediates/library_manifest/debug/AndroidManifest.xml:14:9-16:39
-75            android:name="com.google.android.gms.vision.DEPENDENCIES"
-75-->[:flutter_qr_bar_scanner] /Users/lasliegeorgesjr/projects/Seven Academy/hospital/app/build/flutter_qr_bar_scanner/intermediates/library_manifest/debug/AndroidManifest.xml:15:13-70
-76            android:value="barcode" />
-76-->[:flutter_qr_bar_scanner] /Users/lasliegeorgesjr/projects/Seven Academy/hospital/app/build/flutter_qr_bar_scanner/intermediates/library_manifest/debug/AndroidManifest.xml:16:13-36
-77
-78        <activity
-78-->[com.google.android.gms:play-services-base:16.0.1] /Users/lasliegeorgesjr/.gradle/caches/transforms-2/files-2.1/c3ce55d01738062c3563abb7ad91f50d/jetified-play-services-base-16.0.1/AndroidManifest.xml:23:9-26:75
-79            android:name="com.google.android.gms.common.api.GoogleApiActivity"
-79-->[com.google.android.gms:play-services-base:16.0.1] /Users/lasliegeorgesjr/.gradle/caches/transforms-2/files-2.1/c3ce55d01738062c3563abb7ad91f50d/jetified-play-services-base-16.0.1/AndroidManifest.xml:24:13-79
-80            android:exported="false"
-80-->[com.google.android.gms:play-services-base:16.0.1] /Users/lasliegeorgesjr/.gradle/caches/transforms-2/files-2.1/c3ce55d01738062c3563abb7ad91f50d/jetified-play-services-base-16.0.1/AndroidManifest.xml:25:13-37
-81            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
-81-->[com.google.android.gms:play-services-base:16.0.1] /Users/lasliegeorgesjr/.gradle/caches/transforms-2/files-2.1/c3ce55d01738062c3563abb7ad91f50d/jetified-play-services-base-16.0.1/AndroidManifest.xml:26:13-72
-82
-83        <meta-data
-83-->[com.google.android.gms:play-services-basement:16.1.0] /Users/lasliegeorgesjr/.gradle/caches/transforms-2/files-2.1/e849acb6c332d518bf3163c533ef783a/jetified-play-services-basement-16.1.0/AndroidManifest.xml:23:9-25:69
-84            android:name="com.google.android.gms.version"
-84-->[com.google.android.gms:play-services-basement:16.1.0] /Users/lasliegeorgesjr/.gradle/caches/transforms-2/files-2.1/e849acb6c332d518bf3163c533ef783a/jetified-play-services-basement-16.1.0/AndroidManifest.xml:24:13-58
-85            android:value="@integer/google_play_services_version" />
-85-->[com.google.android.gms:play-services-basement:16.1.0] /Users/lasliegeorgesjr/.gradle/caches/transforms-2/files-2.1/e849acb6c332d518bf3163c533ef783a/jetified-play-services-basement-16.1.0/AndroidManifest.xml:25:13-66
-86    </application>
-87
-88</manifest>
+74
+75        <activity
+75-->[:url_launcher] /Users/lasliegeorgesjr/projects/Seven Academy/hospital/app/build/url_launcher/intermediates/library_manifest/debug/AndroidManifest.xml:8:9-11:74
+76            android:name="io.flutter.plugins.urllauncher.WebViewActivity"
+76-->[:url_launcher] /Users/lasliegeorgesjr/projects/Seven Academy/hospital/app/build/url_launcher/intermediates/library_manifest/debug/AndroidManifest.xml:9:13-74
+77            android:exported="false"
+77-->[:url_launcher] /Users/lasliegeorgesjr/projects/Seven Academy/hospital/app/build/url_launcher/intermediates/library_manifest/debug/AndroidManifest.xml:10:13-37
+78            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
+78-->[:url_launcher] /Users/lasliegeorgesjr/projects/Seven Academy/hospital/app/build/url_launcher/intermediates/library_manifest/debug/AndroidManifest.xml:11:13-71
+79
+80        <meta-data
+80-->[:flutter_qr_bar_scanner] /Users/lasliegeorgesjr/projects/Seven Academy/hospital/app/build/flutter_qr_bar_scanner/intermediates/library_manifest/debug/AndroidManifest.xml:14:9-16:39
+81            android:name="com.google.android.gms.vision.DEPENDENCIES"
+81-->[:flutter_qr_bar_scanner] /Users/lasliegeorgesjr/projects/Seven Academy/hospital/app/build/flutter_qr_bar_scanner/intermediates/library_manifest/debug/AndroidManifest.xml:15:13-70
+82            android:value="barcode" />
+82-->[:flutter_qr_bar_scanner] /Users/lasliegeorgesjr/projects/Seven Academy/hospital/app/build/flutter_qr_bar_scanner/intermediates/library_manifest/debug/AndroidManifest.xml:16:13-36
+83
+84        <activity
+84-->[com.google.android.gms:play-services-base:16.0.1] /Users/lasliegeorgesjr/.gradle/caches/transforms-2/files-2.1/c3ce55d01738062c3563abb7ad91f50d/jetified-play-services-base-16.0.1/AndroidManifest.xml:23:9-26:75
+85            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+85-->[com.google.android.gms:play-services-base:16.0.1] /Users/lasliegeorgesjr/.gradle/caches/transforms-2/files-2.1/c3ce55d01738062c3563abb7ad91f50d/jetified-play-services-base-16.0.1/AndroidManifest.xml:24:13-79
+86            android:exported="false"
+86-->[com.google.android.gms:play-services-base:16.0.1] /Users/lasliegeorgesjr/.gradle/caches/transforms-2/files-2.1/c3ce55d01738062c3563abb7ad91f50d/jetified-play-services-base-16.0.1/AndroidManifest.xml:25:13-37
+87            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+87-->[com.google.android.gms:play-services-base:16.0.1] /Users/lasliegeorgesjr/.gradle/caches/transforms-2/files-2.1/c3ce55d01738062c3563abb7ad91f50d/jetified-play-services-base-16.0.1/AndroidManifest.xml:26:13-72
+88
+89        <meta-data
+89-->[com.google.android.gms:play-services-basement:16.1.0] /Users/lasliegeorgesjr/.gradle/caches/transforms-2/files-2.1/e849acb6c332d518bf3163c533ef783a/jetified-play-services-basement-16.1.0/AndroidManifest.xml:23:9-25:69
+90            android:name="com.google.android.gms.version"
+90-->[com.google.android.gms:play-services-basement:16.1.0] /Users/lasliegeorgesjr/.gradle/caches/transforms-2/files-2.1/e849acb6c332d518bf3163c533ef783a/jetified-play-services-basement-16.1.0/AndroidManifest.xml:24:13-58
+91            android:value="@integer/google_play_services_version" />
+91-->[com.google.android.gms:play-services-basement:16.1.0] /Users/lasliegeorgesjr/.gradle/caches/transforms-2/files-2.1/e849acb6c332d518bf3163c533ef783a/jetified-play-services-basement-16.1.0/AndroidManifest.xml:25:13-66
+92    </application>
+93
+94</manifest>
