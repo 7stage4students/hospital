@@ -1,7 +1,9 @@
 const Doctor = require("../models/doctorSchema");
 const bcrypt = require("bcrypt");
 const Patient = require("../models/patientSchema");
-
+let jsonFile = require("jsonfile");
+const path = require("path");
+const { authToken } = require("./getHashedPassword");
 //The Controller Bellow is for the admin login post request
 
 exports.postAdminLogin = async (fields, res, next) => {
@@ -22,14 +24,28 @@ exports.postAdminLogin = async (fields, res, next) => {
     }
   };
 
-  if (checkin(password, user.password))
+  if (checkin(password, user.password)){
     //  Redirect User to home page
-    res.render("adminpage");
+      console.log(user);
+
+      let token = authToken();
+      res.cookie("token", token, {
+        maxAge: 6000000,
+      });
+
+      let data = jsonFile.readFileSync(path.join(__dirname, "../", "users.json"));
+
+      data[token] = {
+        email: user.email,
+        password: user.password,
+      };
+
+      jsonFile.writeFileSync(path.join(__dirname, "../", "users.json"), data);
+
+      res.render("admin/dashboard");
+    }
   else
-    res.redirect("/adminlogin", {
-      message: "incorrect email or password",
-      messageClass: "alert-danger",
-    });
+    res.redirect("/adminlogin");
 };
 
 //The Controller Bellow is for the user login post request

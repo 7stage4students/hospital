@@ -40,18 +40,30 @@ router.use(express.json())
    router.get('/patients/all',(req, res) =>{
         console.log('Getting all ');
         console.log(req.user)
-        getAll(res);
+        if (req.user){
+            getAll(res);
+        }else
+        res.render('adminlogin');     
  
    })
+   router.get('/data/all',(req, res) =>{
+    console.log('Getting all ');
+    console.log(req.user)
+    if (req.user){
+        getAll(res);
+    }else
+    res.render('adminlogin');     
+
+})
 
    router.get('/patient/:id',( req, res )=>{
        
        let id = req.params.id;
-       let sample = 'YQXWzHavQAMl6U1YjOURvlv9u3O0N9xR7KQ5F9ekPj0=';
-    //    if (req.user){
-            getById(sample,res)
-    //    }else
-            // res.render('adminlogin');      
+    //    let sample = 'YQXWzHavQAMl6U1YjOURvlv9u3O0N9xR7KQ5F9ekPj0=';
+       if (req.user){
+            getById(id,res)
+       }else
+            res.render('adminlogin');      
    });
 
    router.post('/add',( req, res )=>{

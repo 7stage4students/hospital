@@ -12,17 +12,17 @@
                   <form>
                       <div class="form-group">
                           <label class="bmd-label-floating">Name</label>
-                          <input type="text" class="form-control">
+                          <input type="text" class="form-control" value="{{name}}"> 
                         </div>
                    <div class="form-group">
                           <label class="bmd-label-floating">Email address</label>
-                          <input type="email" class="form-control">
+                          <input type="email" class="form-control" value="{{email}}">
                         </div>
                     <div class="row">
                       <div class="col-md-12">
                         <div class="form-group">
                           <label class="bmd-label-floating">Location</label>
-                          <input type="text" class="form-control">
+                          <input type="text" class="form-control" value="{{name}}">
                         </div>
                       </div>
                     </div>
@@ -61,16 +61,14 @@
               <div class="card card-profile">
                 <div class="card-avatar">
                   <a href="javascript:;">
-                    <img class="img" src="../assets/img/faces/marc.jpg" />
+                    <img class="img" src="../{{image_url}}" />
                   </a>
                 </div>
                 <div class="card-body">
-                  <h6 class="card-category text-gray">CEO / Co-Founder</h6>
-                  <h4 class="card-title">Alec Thompson</h4>
-                  <p class="card-description">
-                    Don't be scared of the truth because we need to restart the human foundation in truth And I love you like Kanye loves Kanye I love Rick Owens’ bed design but the back is...
-                  </p>
-                  <a href="javascript:;" class="btn btn-primary btn-round">Follow</a>
+                  <h4 class="card-title">{{name}}</h4>
+                  <p>{{email}}</p>
+                  <img src="../{{qrcode_url}}" alt="">
+                  <a href="../{{qrcode_url}}" download="" class="btn btn-primary">Download qrcode</a>
                 </div>
               </div>
             </div>

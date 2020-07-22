@@ -25,11 +25,15 @@ app.set("view engine", "handlebars");
 app.use(express.static(path.join(__dirname, 'public')));
 app.use(express.json());
 
+//app.locals.test = {name:'sdvd'}
 app.get('/',(req,res)=>{
      res.render('home')
 })
 app.get('/login',(req,res)=>{
-    res.render('login')
+    res.redirect('user/login')
+})
+app.get('/signup',(req,res)=>{
+    res.redirect('user/register')
 })
 app.get('/signup',(req,res)=>{
     res.render('register')
