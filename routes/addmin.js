@@ -9,7 +9,10 @@ const auth = require('../controlers/Auth')
     //    res.render('addmin')
     res.render('adminlogin'); 
    });
-
+   router.get('/login', (req,res)=>{
+    //    res.render('addmin')
+    res.render('adminlogin'); 
+   });
    router.post('/login', (req,res)=>{
 
     form.parse(req, (err, fields, files) => {

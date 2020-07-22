@@ -21,6 +21,7 @@ const patientSchema = new mongoose.Schema({
         type: Number,
         required: true,
     },
+    dob: String,
     email:{
         type: String,
         required: true,
@@ -32,7 +33,11 @@ const patientSchema = new mongoose.Schema({
         required: true,
         max: 1024,
         min: 6
-    },    
+    },  
+    bloodType: {
+        type: String,
+        
+    },  
     disease :[String],
     location : String,
     image_url: String,

@@ -4,275 +4,337 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
-        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/style.css">
-
-    <!-- Custom fonts for this template -->
-    <link href="./vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet'
-        type='text/css'>
-    <link
-        href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800'
-        rel='stylesheet' type='text/css'>
-
-    <!-- Custom styles for this template -->
-    <link href="theme/css/clean-blog.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="theme/css/main.css">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Seven Health</title>
+    <!-- Plugins CSS -->
+    <link rel="stylesheet" href="./newtheme/plugins/bootstrap-4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./newtheme/plugins/meanmenu/meanmenu.css">
+    <!-- fonts -->
+    <link rel="stylesheet" href="./newtheme/fonts/ep-icon-fonts/css/style.css">
+    <link rel="stylesheet" href="./newtheme/fonts/fontawesome-5/css/all.min.css">
+    <!-- Custom Stylesheet -->
+    <link rel="stylesheet" href="./newtheme/css/settings.css">
+    <link rel="stylesheet" href="./newtheme/css/style.css">
 </head>
 
 <body>
-
-    <!-- the nav bar -->
-    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
-        <div class="container">
-            <a class="navbar-brand smooth-scroll" href="#home">Seven E-Health</a>
-            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
-                data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
-                aria-label="Toggle navigation">
-                Menu
-                <i class="fa fa-bars"></i>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarResponsive">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item">
-                        <a class="nav-link smooth-scroll" href="#home">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link smooth-scroll" href="#about">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link smooth-scroll" href="#contact">Contact</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="/login">Login</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-    <!-- Page Header -->
-    <header id="home" class="masthead" style="background-image: url('img/home-bg.jpg')">
-        <div class="overlay"></div>
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-8 col-md-10 mx-auto">
-                    <div class="site-heading">
-                        <h1> Seven E-Health </h1>
-                        <span class="subheading">Take your medical history with you everywhere you go.</span>
+    <div class="site-wrapper">
+        <header class="site-header fixed-top " style="background-color: white;">
+            <div class="container">
+                <div class="row justify-content-center align-items-center position-relative">
+                    <div class="col-sm-3 col-6 col-lg-2 col-xl-2 order-lg-1">
+                        <div class="brand">
+                            {{!-- <a href=""><img src="./newtheme/image/main-logo.png" alt="" /></a> --}}
+                            <a href="/" class="logo"><h1>7<span class="health">Health</span></h1></a>
+                        </div>
                     </div>
-                    <div class="site-heading">
-                        <a class="btn btn-primary float-right" href="/login">login</a>
+                    <div class="col-sm-8 col-lg-3 col-xl-3 d-none d-sm-block order-lg-3">
+                        <div class="header-btns">
+                            <div class="btn-1">
+                                <a href="/login">Sign In</a>
+                            </div>
+                            <div class="btn-2">
+                                <a href="/signup">Get Started</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Menu Block -->
+                    <div class="col-sm-1 col-6 col-lg-7 col-xl-6 offset-xl-1 position-static order-lg-2">
+                        <div class="main-navigation">
+                            <ul class="main-menu">
+                                <li class="menu-item has-dropdown">
+                                    <a href="#home">Home</a>
+                                </li>
+                                <li class="menu-item smooth-scroll"><a href="#features">Features</a></li>
+
+                                <li class="menu-item"><a href="#services">Services</a></li>
+
+                                <li class="menu-item"><a href="#contact">Contact</a></li> 
+                            </ul>
+                        </div>
+                        <div class="mobile-menu"></div>
                     </div>
                 </div>
             </div>
-        </div>
-    </header>
-
-    <!-- About Content -->
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-8 col-md-10 mx-auto" id="about">
-                <div class="post-preview">
-                    <h2 class="post-title">
-                        About Us
-                    </h2>
-                    </a>
-                </div>
-                <hr>
-                <div class="card-deck">
-                    <div class="card">
-                        <img class="card-img-top" src="img/home.jpg" alt="medical pic">
-                        <div class="card-body">
-                            <h5 class="card-title">What is E-health</h5>
-                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
-                                additional content. This content is a little bit longer.</p>
-                        </div>
-                        <div class="card-footer">
-                            <small class="text-muted">Last updated 3 mins ago</small>
+        </header>
+        <!-- Hero Area  -->
+        <section class="hero-area" id="home">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-6 order-lg-2">
+                        <div class="hero-image">
+                            <img src="./newtheme/image/hero-image.png" alt="">
                         </div>
                     </div>
-                    <div class="card">
-                        <img class="card-img-top" src="img/home.jpg" alt="medical pic">
-                        <div class="card-body">
-                            <h5 class="card-title">What E-Health Offers</h5>
-                            <p class="card-text">This card has supporting text below as a natural lead-in to additional
-                                content.</p>
-                        </div>
-                        <div class="card-footer">
-                            <small class="text-muted">Last updated 3 mins ago</small>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <img class="card-img-top" src="img/home.jpg" alt="medical pic">
-                        <div class="card-body">
-                            <h5 class="card-title">How do i use E-health</h5>
-                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
-                                additional content. This card has even longer content than the first to show that equal
-                                height action.</p>
-                        </div>
-                        <div class="card-footer">
-                            <small class="text-muted">Last updated 3 mins ago</small>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Contact Content -->
-    <div class="row">
-        <div class="col-lg-8 col-md-10 mx-auto" id="contact">
-            <div class="post-preview">
-                <h2 class="post-title">
-                    Contact Us
-                </h2>
-                </a>
-            </div>
-            <section id="contact">
-
-                <div class="content-box-md">
-
-                    <div class="container">
-
-                        <div class="row">
-
-                            <div class="col-md-6">
-
-                                <!-- Contact Left -->
-                                <div id="contact-left">
-
-                                    <p style="font-size: 18px;">Lorem ipsum dolor sit amet, consectetur adipisicing
-                                        elit. Alias modi est itaque aliquam sit, minima esse nihil mollitia no.</p>
-
-                                    <div id="offices">
-
-                                        <div class="row">
-
-                                            <div class="office">
-                                                <h4>Cameroon</h4>
-                                                <ul class="office-details">
-                                                    <li><i class="fa fa-mobile"></i><span>+237658066982</span></li>
-                                                    <li><i
-                                                            class="fa fa-envelope"></i><span>info@sevenadvancedacademy.com</span>
-                                                    </li>
-                                                    <li><i class="fa fa-map-marker"></i><span>Bali Douala<br>Littoral,
-                                                            CMR.</span></li>
-                                                </ul>
-                                            </div>
-
-                                        </div>
-
+                    <div class="col-lg-6 order-lg-1">
+                        <div class="hero-content">
+                            <h1>Welcome to Seven E-Health</h1>
+                            <p>Health on the Go. Manage patient's history with just a scan.
+                                Full chats and statistics available.
+                            </p>
+                            <div class="hero-form">
+                                <form action="">
+                                    <div class="form-group">
+                                        {{!-- <input type="text" class="form-control" placeholder="Enter your email address"> --}}
+                                        <button class="submit-btn"><a href="/signup">Get Started</a></button>
                                     </div>
-
-                                </div>
-
+                                    <p class="form-text">Already using Seven Health? <a href="/login" class="link">Sign In</a></p>
+                                </form>
                             </div>
-                            <div class="col-md-6">
-
-                                <!-- Contact Right -->
-                                <div id="contact-right">
-
-                                    <form>
-                                        <h4>Send Message</h4>
-                                        <p style="font-size: 18px;">Contact our team for any further questions or
-                                            concerns.</p>
-
-                                        <div class="row">
-
-                                            <div class="col-md-6 col-sm-6">
-                                                <div class="form-group">
-                                                    <input type="text" class="form-control" id="name"
-                                                        placeholder="Your Name">
-                                                </div>
-                                            </div>
-                                            <div class="col-md-6 col-sm-6">
-                                                <div class="form-group">
-                                                    <input type="email" class="form-control" id="email"
-                                                        placeholder="Email Address">
-                                                </div>
-                                            </div>
-                                            <div class="col-md-6 col-sm-6">
-                                                <div class="form-group">
-                                                    <input type="text" class="form-control" id="phone"
-                                                        placeholder="Phone No.">
-                                                </div>
-                                            </div>
-                                            <div class="col-md-6 col-sm-6">
-                                                <div class="form-group">
-                                                    <input type="text" class="form-control" id="subject"
-                                                        placeholder="Subject">
-                                                </div>
-                                            </div>
-
-                                        </div>
-                                        <div class="form-group">
-                                            <textarea class="form-control" id="message"
-                                                placeholder="Message"></textarea>
-                                        </div>
-
-                                        <div id="submit-btn">
-                                            <a class="btn btn-general btn-primary" href="#" title="Submit"
-                                                role="button">Submit</a>
-                                        </div>
-
-                                    </form>
-
-                                </div>
-
-                            </div>
-
                         </div>
-
                     </div>
-
                 </div>
 
-            </section>
-        </div>
-    </div>
-    <footer>
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-8 col-md-10 mx-auto">
-                    <ul class="list-inline text-center">
-                        <li class="list-inline-item">
-                            <a href="#">
-                                <span class="fa-stack fa-lg">
-                                    <i class="fa fa-circle fa-stack-2x"></i>
-                                    <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
-                                </span>
-                            </a>
-                        </li>
-                        <li class="list-inline-item">
-                            <a href="#">
-                                <span class="fa-stack fa-lg">
-                                    <i class="fa fa-circle fa-stack-2x"></i>
-                                    <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
-                                </span>
-                            </a>
-                        </li>
-                        <li class="list-inline-item">
-                            <a href="#">
-                                <span class="fa-stack fa-lg">
-                                    <i class="fa fa-circle fa-stack-2x"></i>
-                                    <i class="fa fa-github fa-stack-1x fa-inverse"></i>
-                                </span>
-                            </a>
-                        </li>
-                    </ul>
-                    <p class="copyright text-muted" style="color: white !important;">Copyright &copy;
-                        E-Health@SevenAdvanceAcademy: 2020</p>
+            </div>
+        </section>
+
+        <!-- Features Area  -->
+        <section class="feature-section">
+            <div class="shape">
+                <img src="./newtheme/image/landing-1-shape.svg" alt=" and svg of digital operations">
+            </div>
+            <div class="container">
+                <div class="section-title text-center" id="features">
+                    <h2>Our Features</h2>
+                </div>
+                <div class="row mb-d-30">
+                    <div class="col-md-6 col-lg-4 mb--30">
+                        <div class="feature-card">
+                            <div class="card-icon">
+                                <i class="icon icon-send "></i>
+                            </div>
+                            <div class="card-content">
+                                <h3>QR Codes</h3>
+                                <p>Get your personalised QR code <span href="">here</span>This has a full statistics of your health history.</p>
+                                <a href="" class="btn btn-link right-icon">Learn more <i
+                                        class="icon icon-minimal-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 mb--30">
+                        <div class="feature-card">
+                            <div class="card-icon">
+                                <i class="icon icon-settings"></i>
+                            </div>
+                            <div class="card-content">
+                                <h3>Manage Patient</h3>
+                                <p>Reports of patient's consultation, test results, blood type can be manage using this platform.</p>
+                                <a href="" class="btn btn-link right-icon">Learn more <i
+                                        class="icon icon-minimal-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 mb--30">
+                        <div class="feature-card">
+                            <div class="card-icon">
+                                <i class="icon icon-users-mm"></i>
+                            </div>
+                            <div class="card-content">
+                                <h3>View History</h3>
+                                <p>A patient as well as doctors of employers, can use this platform to view medical history.</p>
+                                <a href="" class="btn btn-link right-icon">Learn more <i
+                                        class="icon icon-minimal-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- Features Area  -->
+        <section class="content-section-01" id="services">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-xl-5  col-sm-6 col-10">
+                        <div class="content-img">
+                            <img src="./newtheme/image/content-image-1.png" alt="">
+                        </div>
+                    </div>
+
+                    <div class="col-xl-5 offset-xl-1 col-sm-6">
+                        <div class="content-right-content">
+                            <h2>Take Your Health Along</h2>
+                            <p>
+                                Onces registered, you can view you health Statistis via you phone by just scanning your personalised QR code. 
+                                If anyone ask for your medical report, just let them scan.
+                            </p>
+                            <div class="content-link">
+                                <a href="">Learn more <i class="icon icon-minimal-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="content-section-02">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-xl-5 offset-xl-1 col-sm-6 col-10 order-sm-2">
+                        <div class="content-img">
+                            <img src="./newtheme/image/content-image-2.png" alt="">
+                        </div>
+                    </div>
+                    <div class="col-xl-5  col-sm-6 order-sm-1">
+                        <div class="content-left-content">
+                            <h2>Never miss a thing</h2>
+                            <p>
+                                People most likely get to miss a lot on how to take care of their health, so stay concious about you health and relate with doctors and hospitals.
+                            </p>
+                            <ul class="content-list">
+                                <li>
+                                    <span><i class="icon icon-check-2"></i></span>Available Hospitals
+                                </li>
+                                <li>
+                                    <span><i class="icon icon-check-2"></i></span>Patient's Statistics
+                                </li>
+                                <li>
+                                    <span><i class="icon icon-check-2"></i></span>Doctors on Call.
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        <section class="content-section-03">
+            <div class="shape">
+                <img src="./newtheme/image/landing-4.svg" alt="">
+            </div>
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-xl-5 col-lg-6 col-md-5 col-sm-6 col-10">
+                        <div class="content-img">
+                            <img src="./newtheme/image/content-image-3.png" alt="">
+                        </div>
+                    </div>
+                    <div class="col-xl-5  offset-xl-1 col-lg-6 col-md-7 col-sm-6 ">
+                        <div class="content-left-content">
+                            <h2>Good Health, More Productivity</h2>
+                            <p>
+                                Productivity is directly proportional to the health of a person. Good health is wealth so stay in it. Constantly connnect with a doctor and hospital to check yourself.
+                            </p>
+                            <div class="content-bottom-part">
+                                <p>Interested to see how this works? Get Started to get to learn everything you
+                                    need to know.</p>
+                                <div class="content-btn">
+                                    <a href="/signup" class="btn btn--primary">Get Started</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+
+        <!-- Footer Section 06 -->
+        <div class="footer-section" id="contact">
+            <div class="container">
+                <div class="footer-newsletter-section">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-10 col-xl-8">
+                            <div class="footer-newsletter-content">
+                                <h2>Join our rich newsletter now</h2>
+                                <p>To get more about Seven Health and to stay connected to our updates, join our Seven Group newsletter by subscribing below</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-7 col-xl-6">
+                            <div class="footer-newsletter-form">
+                                <form action="">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" placeholder="Enter your email address">
+                                        <button class="submit-btn">Subscribe</button>
+                                    </div>
+                                    <p class="form-text"><i class="icon icon-lock"></i>Your data is protected. We never
+                                        spam in your inbox</p>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row margin-decrese">
+                    <div class="col-xl-4 col-lg-5 col-margin">
+                        <div class="single-footer">
+                            <div class="footer-title">
+                                <a href="/" class="logo"><h1>7<span class="health">Health</span></h1></a>
+                            </div>
+                            <div class="footer-text">
+                                <p>Your health is a priority, remember good health is wealth. So stay healthy and stay safe</p>
+                                <p>@copyright:SevenAdvancedAcademy2019/2020</p>
+                            </div>
+                            <ul class="footer-social-list">
+                                <li>
+                                    <a href="https://www.facebook.com/sevenadvancedacademy">
+                                        <i class="icon icon-logo-fb-simple"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://twitter.com/SevenAcademy7">
+                                        <i class="icon icon-logo-twitter"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://sevenadvancedacademy.com/">
+                                        <i class="icon icon-google"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-sm-4 col-6 offset-lg-1 col-margin">
+                        <div class="single-footer">
+                            <div class="footer-title">
+                                <h6>Help Menu</h6>
+                            </div>
+                            <ul class="footer-list">
+                                <li><a href="/">Home</a></li>
+                                <li><a href="#features">Features</a></li>
+                                <li><a href="#services">Services</a></li>
+                                <li><a href="/signup">Get Started</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-sm-4 col-6 col-margin">
+                        <div class="single-footer">
+                            <div class="footer-title">
+                                <h6>Support</h6>
+                            </div>
+                            <ul class="footer-list">
+                                <li><a href="">Contact</a></li>
+                                <li><a href="">Help & Support</a></li>
+                                <li><a href="">Privacy Policy</a></li>
+                                <li><a href="">Terms & Conditions</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-sm-4 col-margin">
+                        <div class="single-footer">
+                            <div class="footer-title">
+                                <h6>Products</h6>
+                            </div>
+                            <ul class="footer-list">
+                                <li><a href="">Seven Health</a></li>
+                                <li><a href="">Medical History</a></li>
+                                <li><a href="">Medical Statistics</a></li>
+                                <li><a href="">Health Tips</a></li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-    </footer>
-    <!-- bootstrap Jquery -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.bundle.min.js"></script>
+    </div>
+    <!-- Vendor JS-->
+    <script src="./newtheme/plugins/jquery/jquery.min.js"></script>
+    <script src="./newtheme/plugins/jquery/jquery-migrate.min.js"></script>
+    <script src="./newtheme/plugins/bootstrap-4.3.1/js/bootstrap.bundle.js"></script>
+    <script src="./newtheme/plugins/meanmenu/jquery.meanmenu.js"></script>
+    <!-- Plugins JS -->
+    <script src="./newtheme/js/active.js"></script>
 </body>
 
 </html>
