@@ -1,5 +1,4 @@
 const mongoose = require('mongoose');
-const { number } = require('joi');
 
 const logData = new mongoose.Schema({
     date:{
@@ -15,7 +14,7 @@ const patientSchema = new mongoose.Schema({
     name:{
         type: String,
         required: true,
-        min: 2,
+        min: 6,
         max: 255
     },
     age:{
@@ -27,13 +26,13 @@ const patientSchema = new mongoose.Schema({
         type: String,
         required: true,
         max: 255,
-        min: 2
+        min: 6
     },
     password:{
         type:String,
         required: true,
         max: 1024,
-        min: 2
+        min: 6
     },  
     bloodType: {
         type: String,
@@ -47,11 +46,7 @@ const patientSchema = new mongoose.Schema({
     date:{
         type: String,
         default: new Date()
-    },
-    emergency_contact: {
-        type:Number,
-        default: 1234
-        } 
+    }
 })
 
 module.exports =  mongoose.model('patient',patientSchema);

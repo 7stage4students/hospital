@@ -21,8 +21,9 @@ router.post("/login", (req, res) => {
   });
 });
 
-router.get("/register", (req, res) => {
-  res.render("registration");
+router.get("/signup", (req, res) => {
+  console.log(req)
+  res.render("register");
 });
 
 router.post("/register", (req, res) => {
