@@ -1,5 +1,3 @@
-const Doctor = require("../models/doctorSchema");
-const bcrypt = require("bcrypt");
 const Patient = require("../models/patientSchema");
 const { getHashedPassword } = require("./getHashedPassword");
 const { authToken } = require("./getHashedPassword");

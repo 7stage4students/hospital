@@ -1,5 +1,4 @@
 var qrcode = require('qrcode');
-var fs = require('fs'); 
 const path = require('path');
 
 const qCode = async(user) =>{

@@ -12,6 +12,7 @@ getAll = async(res)=>{
         let data = {}
    // console.log(await Patient.find({}))
    await Patient.find({},(err,result)=>{
+       if (err) throw err;
        // console.log(result)
       data = JSON.stringify(result)
     })
@@ -22,6 +23,7 @@ getAll = async(res)=>{
 exports.
 getById = async(id,res) =>{
     Patient.find({_id: id},(err,result)=>{
+        if(err) throw err;
         res.json(result)
     })
 }
