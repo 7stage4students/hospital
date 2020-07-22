@@ -29,7 +29,10 @@ app.get('/',(req,res)=>{
      res.render('home')
 })
 app.get('/login',(req,res)=>{
-    res.render('login')
+    res.redirect('user/login')
+})
+app.get('/signup',(req,res)=>{
+    res.redirect('user/register')
 })
 app.get('/signup',(req,res)=>{
     res.render('register')
