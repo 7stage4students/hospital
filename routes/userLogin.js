@@ -1,6 +1,6 @@
 const express = require('express');
 const router = express.Router();
-const auth = require('../controlers/Auth');
+
 const formidable = require('formidable');
 const form = formidable({ multiples: true });
 let user = {
@@ -14,7 +14,7 @@ let user = {
               return;
           }
           else{
-             res.render('userpage');
+             res.render('user/profile');
           }
       });
    });
@@ -27,5 +27,14 @@ let user = {
     //    res.render('user')
         res.send('display the users page')
    });
+router.get('/dashboard',(req,res)=>{
+     res.render('user/dashboard',{dash:'active'});
+})
+router.get('/profile',(req,res)=>{
+     res.render('user/profile',{pro:'active'});
+})
 
+router.get('/logs',(req,res)=>{
+     res.render('user/logs',{logs:'active'});
+})
    module.exports = router
