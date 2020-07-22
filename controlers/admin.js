@@ -3,25 +3,26 @@ const bcrypt = require('bcrypt');
 const Patient = require('../models/patientSchema');
 const crypto= require('crypto');
 const { getHashedPassword } = require("./getHashedPassword");
+const { json } = require('express');
 
 
 //GeT All Patients
 exports.
 getAll = async(res)=>{
- 
-    Patient.find({},(err,result)=>{
-        console.log(result)
-        res.send(result)
+        let data = {}
+   // console.log(await Patient.find({}))
+   await Patient.find({},(err,result)=>{
+       // console.log(result)
+      data = JSON.stringify(result)
     })
-    
-    
+    return   data;
 }
 
 //Get By ID
 exports.
 getById = async(id,res) =>{
     Patient.find({_id: id},(err,result)=>{
-        res.send(result)
+        res.json(result)
     })
 }
 
