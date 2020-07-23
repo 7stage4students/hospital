@@ -7,7 +7,7 @@ const users = require('./admin');
 const { authToken } = require("./getHashedPassword");
 //The Controller Bellow is for the admin login post request
 
-exports.postAdminLogin = async (fields, res, next) => {
+exports.postAdminLogin = async (fields, res) => {
   let email, password;
 
   email = fields.email;
@@ -17,15 +17,15 @@ exports.postAdminLogin = async (fields, res, next) => {
 
   if (!user) return res.render("adminlogin", { message: "user not found" });
 
-  let check = await bcrypt.compare(password, user.password);
+  // let check = await bcrypt.compare(password, user.password);
   //TODO: get a password harsher
-  let checkin = (password, userPassword) => {
+  let checkin = (password) => {
     if (password === user.password) {
       return true;
     }
   };
 
-  if (checkin(password, user.password)){
+  if (checkin(password)){
     //  Redirect User to home page
       console.log(user);
 
@@ -55,7 +55,7 @@ exports.postAdminLogin = async (fields, res, next) => {
 };
 
 //The Controller Bellow is for the user login post request
-exports.postUserLogin = async (req, res, next) => {
+exports.postUserLogin = async (req, res) => {
   let email, password;
   email = req.body.email;
   password = req.body.password;
@@ -64,7 +64,7 @@ exports.postUserLogin = async (req, res, next) => {
 
   if (!user)
     // console.log('User no found')
-    return res.redirect("/login");
+    return res.render("login");
 
   let check = await bcrypt.compare(password, user.password);
 

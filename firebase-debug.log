@@ -1,0 +1,195 @@
+[debug] [2020-07-22T20:57:35.043Z] ----------------------------------------------------------------------
+[debug] [2020-07-22T20:57:35.045Z] Command:       /usr/local/bin/node /usr/local/bin/firebase deploy
+[debug] [2020-07-22T20:57:35.045Z] CLI Version:   8.4.3
+[debug] [2020-07-22T20:57:35.045Z] Platform:      darwin
+[debug] [2020-07-22T20:57:35.045Z] Node Version:  v12.17.0
+[debug] [2020-07-22T20:57:35.046Z] Time:          Wed Jul 22 2020 21:57:35 GMT+0100 (West Africa Standard Time)
+[debug] [2020-07-22T20:57:35.046Z] ----------------------------------------------------------------------
+[debug] [2020-07-22T20:57:35.046Z] 
+[debug] [2020-07-22T20:57:35.055Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-07-22T20:57:35.055Z] > authorizing via signed-in user
+[debug] [2020-07-22T20:57:35.055Z] [iam] checking project hospital-966e7 for permissions ["cloudfunctions.functions.create","cloudfunctions.functions.delete","cloudfunctions.functions.get","cloudfunctions.functions.list","cloudfunctions.functions.update","cloudfunctions.operations.get","firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2020-07-22T20:57:35.057Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2020-07-22T20:57:35.058Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2020-07-22T20:57:39.257Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Wed, 22 Jul 2020 20:57:39 GMT","server":"scaffolding on HTTPServer2","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-27=\":443\"; ma=2592000,h3-25=\":443\"; ma=2592000,h3-T050=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2020-07-22T20:57:39.276Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/hospital-966e7:testIamPermissions  
+ {"permissions":["cloudfunctions.functions.create","cloudfunctions.functions.delete","cloudfunctions.functions.get","cloudfunctions.functions.list","cloudfunctions.functions.update","cloudfunctions.operations.get","firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2020-07-22T20:57:40.749Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Wed, 22 Jul 2020 20:57:40 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","server-timing":"gfet4t7; dur=639","alt-svc":"h3-29=\":443\"; ma=2592000,h3-27=\":443\"; ma=2592000,h3-25=\":443\"; ma=2592000,h3-T050=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2020-07-22T20:57:40.750Z] >>> HTTP REQUEST POST https://iam.googleapis.com/v1/projects/hospital-966e7/serviceAccounts/hospital-966e7@appspot.gserviceaccount.com:testIamPermissions  
+ {"permissions":["iam.serviceAccounts.actAs"]}
+[debug] [2020-07-22T20:57:43.310Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Wed, 22 Jul 2020 20:57:43 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-27=\":443\"; ma=2592000,h3-25=\":443\"; ma=2592000,h3-T050=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2020-07-22T20:57:43.312Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/hospital-966e7  
+ 
+[debug] [2020-07-22T20:57:45.599Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Wed, 22 Jul 2020 20:57:45 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-27=\":443\"; ma=2592000,h3-25=\":443\"; ma=2592000,h3-T050=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] 
+[info] === Deploying to 'hospital-966e7'...
+[info] 
+[info] i  deploying functions, hosting 
+[info] Running command: npm --prefix "$RESOURCE_DIR" run lint
+[info] ✔  functions: Finished running predeploy script. 
+[debug] [2020-07-22T20:58:01.939Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "8"
+  },
+  "dependencies": {
+    "firebase-admin": "^8.10.0",
+    "firebase-functions": "^3.6.1",
+    "bcrypt": "^5.0.0",
+    "body-parser": "^1.19.0",
+    "cookie-parser": "^1.4.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "express-handlebars": "^5.1.0",
+    "formidable": "^1.2.2",
+    "joi": "^17.1.1",
+    "jsonfile": "^6.0.1",
+    "mongoose": "^5.9.25",
+    "qrcode": "^1.4.4"
+  },
+  "devDependencies": {
+    "eslint": "^5.12.0",
+    "eslint-plugin-promise": "^4.0.1",
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[info] i  functions: ensuring required API cloudfunctions.googleapis.com is enabled... 
+[debug] [2020-07-22T20:58:02.880Z] [functions] runtime dependency check dates: warning: 2020-05-21T00:00:00.000Z error: 2020-07-09T00:00:00.000Z
+[warn] 
+[warn] ⚠  functions: The Node.js 8 runtime is deprecated and will be decommissioned on 2020-12-05. For more information, see: https://firebase.google.com/support/faq#functions-runtime 
+[warn] 
+[debug] [2020-07-22T20:58:02.882Z] >>> HTTP REQUEST GET https://serviceusage.googleapis.com/v1/projects/hospital-966e7/services/cloudfunctions.googleapis.com  
+ 
+[debug] [2020-07-22T20:58:02.882Z] >>> HTTP REQUEST GET https://serviceusage.googleapis.com/v1/projects/hospital-966e7/services/runtimeconfig.googleapis.com  
+ 
+[debug] [2020-07-22T20:58:05.549Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Wed, 22 Jul 2020 20:58:04 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-27=\":443\"; ma=2592000,h3-T050=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2020-07-22T20:58:06.862Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Wed, 22 Jul 2020 20:58:05 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-27=\":443\"; ma=2592000,h3-T050=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] ✔  functions: required API cloudfunctions.googleapis.com is enabled 
+[debug] [2020-07-22T20:58:06.863Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/hospital-966e7/adminSdkConfig  
+ 
+[debug] [2020-07-22T20:58:09.846Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Wed, 22 Jul 2020 20:58:08 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-27=\":443\"; ma=2592000,h3-25=\":443\"; ma=2592000,h3-T050=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2020-07-22T20:58:09.847Z] >>> HTTP REQUEST POST https://firebasehosting.googleapis.com/v1beta1/sites/hospital-966e7/versions  
+ {"config":{"rewrites":[{"glob":"**","function":"app"}]},"labels":{"deployment-tool":"cli-firebase"}}
+[debug] [2020-07-22T20:58:12.981Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Wed, 22 Jul 2020 20:58:12 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-27=\":443\"; ma=2592000,h3-25=\":443\"; ma=2592000,h3-T050=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] i  functions: preparing functions directory for uploading... 
+[debug] [2020-07-22T20:58:12.983Z] >>> HTTP REQUEST GET https://runtimeconfig.googleapis.com/v1beta1/projects/hospital-966e7/configs  
+ 
+[debug] [2020-07-22T20:58:15.429Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Wed, 22 Jul 2020 20:58:15 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-27=\":443\"; ma=2592000,h3-T050=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] i  functions: packaged functions (28.22 MB) for uploading 
+[debug] [2020-07-22T20:58:17.686Z] >>> HTTP REQUEST GET https://cloudfunctions.googleapis.com/v1/projects/hospital-966e7/locations/-/functions  
+ 
+[debug] [2020-07-22T20:58:20.278Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Wed, 22 Jul 2020 20:58:20 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-27=\":443\"; ma=2592000,h3-25=\":443\"; ma=2592000,h3-T050=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2020-07-22T20:58:20.280Z] >>> HTTP REQUEST POST https://cloudfunctions.googleapis.com/v1/projects/hospital-966e7/locations/us-central1/functions:generateUploadUrl  
+ 
+[debug] [2020-07-22T20:58:23.553Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Wed, 22 Jul 2020 20:58:23 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-27=\":443\"; ma=2592000,h3-25=\":443\"; ma=2592000,h3-T050=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2020-07-22T20:58:23.554Z] >>> HTTP REQUEST PUT https://storage.googleapis.com/gcf-upload-us-central1-b4cf905a-d2ea-4b6e-bbec-e782887ff6d9/2b719e67-c4dd-404a-962b-bb8996057ab3.zip?GoogleAccessId=service-371308706930@gcf-admin-robot.iam.gserviceaccount.com&Expires=1595453303&Signature=M6KaZ2CIqrp3C6YBLXfO%2BkwTZsOzhsRtdzM%2F3DGDBqQRTXqr27iFeUYOpRgTmNb%2BiQ0d1b835eJxV0M0dgrQtB4Toaldnsscbmfjvviv4uyx3N8dOHolBYN6Z3bWsYvD%2BAAWIJREd7yv3xCo%2FR0vi6elGIQddul5MQpW%2FmRd7Wu3xFgi71ypznUJOd8J12boOWzHociTuSwX0tlUIJo1O2Zc9nr%2BesabiyTqeSogHycYUQZtWiiuQ%2FMiOz4d6rPPpMwVkkX%2Br78up7KTUphCYa8udb8B50URgSgy0c17mvgWNzqLLveHZ006VDdG0JOifUYfcIdQAS%2FrOCqIrmyfOA%3D%3D  
+ <request body omitted>
+[debug] [2020-07-22T21:19:21.867Z] ----------------------------------------------------------------------
+[debug] [2020-07-22T21:19:21.868Z] Command:       /usr/local/bin/node /usr/local/bin/firebase deploy
+[debug] [2020-07-22T21:19:21.868Z] CLI Version:   8.4.3
+[debug] [2020-07-22T21:19:21.868Z] Platform:      darwin
+[debug] [2020-07-22T21:19:21.868Z] Node Version:  v12.17.0
+[debug] [2020-07-22T21:19:21.869Z] Time:          Wed Jul 22 2020 22:19:21 GMT+0100 (West Africa Standard Time)
+[debug] [2020-07-22T21:19:21.869Z] ----------------------------------------------------------------------
+[debug] [2020-07-22T21:19:21.869Z] 
+[debug] [2020-07-22T21:19:21.874Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-07-22T21:19:21.875Z] > authorizing via signed-in user
+[debug] [2020-07-22T21:19:21.875Z] [iam] checking project hospital-966e7 for permissions ["cloudfunctions.functions.create","cloudfunctions.functions.delete","cloudfunctions.functions.get","cloudfunctions.functions.list","cloudfunctions.functions.update","cloudfunctions.operations.get","firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2020-07-22T21:19:21.877Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/hospital-966e7:testIamPermissions  
+ {"permissions":["cloudfunctions.functions.create","cloudfunctions.functions.delete","cloudfunctions.functions.get","cloudfunctions.functions.list","cloudfunctions.functions.update","cloudfunctions.operations.get","firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2020-07-22T21:19:27.408Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Wed, 22 Jul 2020 21:19:26 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","server-timing":"gfet4t7; dur=596","alt-svc":"h3-29=\":443\"; ma=2592000,h3-27=\":443\"; ma=2592000,h3-25=\":443\"; ma=2592000,h3-T050=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2020-07-22T21:19:27.410Z] >>> HTTP REQUEST POST https://iam.googleapis.com/v1/projects/hospital-966e7/serviceAccounts/hospital-966e7@appspot.gserviceaccount.com:testIamPermissions  
+ {"permissions":["iam.serviceAccounts.actAs"]}
+[debug] [2020-07-22T21:19:29.965Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Wed, 22 Jul 2020 21:19:29 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-27=\":443\"; ma=2592000,h3-T050=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2020-07-22T21:19:29.967Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/hospital-966e7  
+ 
+[debug] [2020-07-22T21:19:32.064Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Wed, 22 Jul 2020 21:19:31 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-27=\":443\"; ma=2592000,h3-25=\":443\"; ma=2592000,h3-T050=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] 
+[info] === Deploying to 'hospital-966e7'...
+[info] 
+[info] i  deploying functions, hosting 
+[info] Running command: npm --prefix "$RESOURCE_DIR" run lint
+[info] ✔  functions: Finished running predeploy script. 
+[debug] [2020-07-22T21:19:46.614Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "8"
+  },
+  "dependencies": {
+    "firebase-admin": "^8.10.0",
+    "firebase-functions": "^3.6.1",
+    "bcrypt": "^5.0.0",
+    "body-parser": "^1.19.0",
+    "cookie-parser": "^1.4.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "express-handlebars": "^5.1.0",
+    "formidable": "^1.2.2",
+    "joi": "^17.1.1",
+    "jsonfile": "^6.0.1",
+    "mongoose": "^5.9.25",
+    "qrcode": "^1.4.4"
+  },
+  "devDependencies": {
+    "eslint": "^5.12.0",
+    "eslint-plugin-promise": "^4.0.1",
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[info] i  functions: ensuring required API cloudfunctions.googleapis.com is enabled... 
+[debug] [2020-07-22T21:19:47.788Z] [functions] runtime dependency check dates: warning: 2020-05-21T00:00:00.000Z error: 2020-07-09T00:00:00.000Z
+[warn] 
+[warn] ⚠  functions: The Node.js 8 runtime is deprecated and will be decommissioned on 2020-12-05. For more information, see: https://firebase.google.com/support/faq#functions-runtime 
+[warn] 
+[debug] [2020-07-22T21:19:47.790Z] >>> HTTP REQUEST GET https://serviceusage.googleapis.com/v1/projects/hospital-966e7/services/cloudfunctions.googleapis.com  
+ 
+[debug] [2020-07-22T21:19:47.790Z] >>> HTTP REQUEST GET https://serviceusage.googleapis.com/v1/projects/hospital-966e7/services/runtimeconfig.googleapis.com  
+ 
+[debug] [2020-07-22T21:19:50.563Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Wed, 22 Jul 2020 21:19:49 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-27=\":443\"; ma=2592000,h3-25=\":443\"; ma=2592000,h3-T050=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] ✔  functions: required API cloudfunctions.googleapis.com is enabled 
+[debug] [2020-07-22T21:19:50.731Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Wed, 22 Jul 2020 21:19:50 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-27=\":443\"; ma=2592000,h3-25=\":443\"; ma=2592000,h3-T050=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2020-07-22T21:19:50.731Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/hospital-966e7/adminSdkConfig  
+ 
+[debug] [2020-07-22T21:19:52.372Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Wed, 22 Jul 2020 21:19:51 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-27=\":443\"; ma=2592000,h3-25=\":443\"; ma=2592000,h3-T050=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2020-07-22T21:19:52.374Z] >>> HTTP REQUEST POST https://firebasehosting.googleapis.com/v1beta1/sites/hospital-966e7/versions  
+ {"config":{"rewrites":[{"glob":"**","function":"app"}]},"labels":{"deployment-tool":"cli-firebase"}}
+[debug] [2020-07-22T21:19:58.024Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Wed, 22 Jul 2020 21:19:57 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-27=\":443\"; ma=2592000,h3-25=\":443\"; ma=2592000,h3-T050=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] i  functions: preparing functions directory for uploading... 
+[debug] [2020-07-22T21:19:58.025Z] >>> HTTP REQUEST GET https://runtimeconfig.googleapis.com/v1beta1/projects/hospital-966e7/configs  
+ 
+[debug] [2020-07-22T21:20:00.107Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Wed, 22 Jul 2020 21:19:59 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-27=\":443\"; ma=2592000,h3-T050=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] i  functions: packaged functions (28.22 MB) for uploading 
+[debug] [2020-07-22T21:20:02.337Z] >>> HTTP REQUEST GET https://cloudfunctions.googleapis.com/v1/projects/hospital-966e7/locations/-/functions  
+ 
+[debug] [2020-07-22T21:20:08.777Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Wed, 22 Jul 2020 21:20:04 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-27=\":443\"; ma=2592000,h3-25=\":443\"; ma=2592000,h3-T050=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2020-07-22T21:20:08.779Z] >>> HTTP REQUEST POST https://cloudfunctions.googleapis.com/v1/projects/hospital-966e7/locations/us-central1/functions:generateUploadUrl  
+ 
+[debug] [2020-07-22T21:20:10.516Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Wed, 22 Jul 2020 21:20:10 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-27=\":443\"; ma=2592000,h3-25=\":443\"; ma=2592000,h3-T050=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2020-07-22T21:20:10.517Z] >>> HTTP REQUEST PUT https://storage.googleapis.com/gcf-upload-us-central1-b4cf905a-d2ea-4b6e-bbec-e782887ff6d9/4dabed52-347a-4882-b899-dba785dc14ca.zip?GoogleAccessId=service-371308706930@gcf-admin-robot.iam.gserviceaccount.com&Expires=1595454610&Signature=NA%2BPf8%2Bu5Zw2AM6XaA%2FKqNdJHD%2BMB1ntEoDSHjTo5N5zNuOTVgQ5CN8smHkHEQMJLLwzrpSwt6ojiLqeF9X%2B6ON0xEnFD5hG985esIFKHr%2FwbHm5T%2FVxLxj3CuYzqwTqQ0ioNfNi3AjZ%2BnH8lR%2FylwPOZ%2FOpBbC%2FmZUHeq3OhV5REYrxOsLJlrXntFJJUVdGj9d9VkWsmZPohf2nd2xKFSqwBkv2NN2%2FeYsJBuJWt1nDItu9Bv%2Bqac5dtJUnHkHiCX5VgHt2h78%2FqhH%2FetMYa1IKr3%2FolMmNr%2FWDqnMxFs7kCK7fRe%2BwJiIOdCNsuHCzO0uq7PSxfGV3Lx5FsTxL2w%3D%3D  
+ <request body omitted>
+[warn] ⚠  functions: Upload Error: Server Error. write EPIPE 
+[debug] [2020-07-22T22:00:06.897Z] Error: write EPIPE
+    at WriteWrap.onWriteComplete [as oncomplete] (internal/stream_base_commons.js:92:16)
+[error] 
+[error] Error: Server Error. write EPIPE

@@ -4,7 +4,7 @@ require('dotenv').config()
 
 const express = require('express');
 const path = require('path')
-// const adminRouter = require('./routes/admin')
+const adminRouter = require('./routes/admin')
 const userRouter = require('./routes/user');
 const cookieParser= require('cookie-parser');
 const userTracker = require('./utils/userTracker')
@@ -40,7 +40,7 @@ app.get('/signup',(req,res)=>{
 app.get('/signup',(req,res)=>{
     res.render('register')
 })
-// app.use('/admin', adminRouter);
+app.use('/admin', adminRouter);
 app.use('/user', userRouter)
 app.use('/test',testRoute)
 
