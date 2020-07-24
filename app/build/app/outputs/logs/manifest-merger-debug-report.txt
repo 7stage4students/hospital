@@ -5,6 +5,7 @@ INJECTED from /Users/lasliegeorgesjr/projects/Seven Academy/hospital/app/android
 INJECTED from /Users/lasliegeorgesjr/projects/Seven Academy/hospital/app/android/app/src/main/AndroidManifest.xml:1:1-47:12
 INJECTED from /Users/lasliegeorgesjr/projects/Seven Academy/hospital/app/android/app/src/main/AndroidManifest.xml:1:1-47:12
 MERGED from /Users/lasliegeorgesjr/projects/Seven Academy/hospital/app/android/app/src/main/AndroidManifest.xml:1:1-47:12
+MERGED from [:url_launcher] /Users/lasliegeorgesjr/projects/Seven Academy/hospital/app/build/url_launcher/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-14:12
 MERGED from [:flutter_qr_bar_scanner] /Users/lasliegeorgesjr/projects/Seven Academy/hospital/app/build/flutter_qr_bar_scanner/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-19:12
 MERGED from [:native_device_orientation] /Users/lasliegeorgesjr/projects/Seven Academy/hospital/app/build/native_device_orientation/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-7:12
 MERGED from [com.google.android.gms:play-services-vision:17.0.2] /Users/lasliegeorgesjr/.gradle/caches/transforms-2/files-2.1/6fa60a43eb665ebd30b6f65ada07d19d/play-services-vision-17.0.2/AndroidManifest.xml:2:1-9:12
@@ -61,6 +62,8 @@ INJECTED from /Users/lasliegeorgesjr/projects/Seven Academy/hospital/app/android
 		ADDED from /Users/lasliegeorgesjr/projects/Seven Academy/hospital/app/android/app/src/main/AndroidManifest.xml:1:11-69
 application
 ADDED from /Users/lasliegeorgesjr/projects/Seven Academy/hospital/app/android/app/src/main/AndroidManifest.xml:8:5-46:19
+MERGED from [:url_launcher] /Users/lasliegeorgesjr/projects/Seven Academy/hospital/app/build/url_launcher/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-12:19
+MERGED from [:url_launcher] /Users/lasliegeorgesjr/projects/Seven Academy/hospital/app/build/url_launcher/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-12:19
 MERGED from [:flutter_qr_bar_scanner] /Users/lasliegeorgesjr/projects/Seven Academy/hospital/app/build/flutter_qr_bar_scanner/intermediates/library_manifest/debug/AndroidManifest.xml:13:5-17:19
 MERGED from [:flutter_qr_bar_scanner] /Users/lasliegeorgesjr/projects/Seven Academy/hospital/app/build/flutter_qr_bar_scanner/intermediates/library_manifest/debug/AndroidManifest.xml:13:5-17:19
 MERGED from [com.google.android.gms:play-services-vision:17.0.2] /Users/lasliegeorgesjr/.gradle/caches/transforms-2/files-2.1/6fa60a43eb665ebd30b6f65ada07d19d/play-services-vision-17.0.2/AndroidManifest.xml:7:5-20
@@ -135,6 +138,8 @@ uses-sdk
 INJECTED from /Users/lasliegeorgesjr/projects/Seven Academy/hospital/app/android/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from /Users/lasliegeorgesjr/projects/Seven Academy/hospital/app/android/app/src/main/AndroidManifest.xml
 INJECTED from /Users/lasliegeorgesjr/projects/Seven Academy/hospital/app/android/app/src/main/AndroidManifest.xml
+MERGED from [:url_launcher] /Users/lasliegeorgesjr/projects/Seven Academy/hospital/app/build/url_launcher/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [:url_launcher] /Users/lasliegeorgesjr/projects/Seven Academy/hospital/app/build/url_launcher/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
 MERGED from [:flutter_qr_bar_scanner] /Users/lasliegeorgesjr/projects/Seven Academy/hospital/app/build/flutter_qr_bar_scanner/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
 MERGED from [:flutter_qr_bar_scanner] /Users/lasliegeorgesjr/projects/Seven Academy/hospital/app/build/flutter_qr_bar_scanner/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
 MERGED from [:native_device_orientation] /Users/lasliegeorgesjr/projects/Seven Academy/hospital/app/build/native_device_orientation/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
@@ -221,6 +226,14 @@ uses-permission#android.permission.INTERNET
 ADDED from /Users/lasliegeorgesjr/projects/Seven Academy/hospital/app/android/app/src/debug/AndroidManifest.xml:6:5-66
 	android:name
 		ADDED from /Users/lasliegeorgesjr/projects/Seven Academy/hospital/app/android/app/src/debug/AndroidManifest.xml:6:22-64
+activity#io.flutter.plugins.urllauncher.WebViewActivity
+ADDED from [:url_launcher] /Users/lasliegeorgesjr/projects/Seven Academy/hospital/app/build/url_launcher/intermediates/library_manifest/debug/AndroidManifest.xml:8:9-11:74
+	android:exported
+		ADDED from [:url_launcher] /Users/lasliegeorgesjr/projects/Seven Academy/hospital/app/build/url_launcher/intermediates/library_manifest/debug/AndroidManifest.xml:10:13-37
+	android:theme
+		ADDED from [:url_launcher] /Users/lasliegeorgesjr/projects/Seven Academy/hospital/app/build/url_launcher/intermediates/library_manifest/debug/AndroidManifest.xml:11:13-71
+	android:name
+		ADDED from [:url_launcher] /Users/lasliegeorgesjr/projects/Seven Academy/hospital/app/build/url_launcher/intermediates/library_manifest/debug/AndroidManifest.xml:9:13-74
 uses-permission#android.permission.CAMERA
 ADDED from [:flutter_qr_bar_scanner] /Users/lasliegeorgesjr/projects/Seven Academy/hospital/app/build/flutter_qr_bar_scanner/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-65
 	android:name
