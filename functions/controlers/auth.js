@@ -3,6 +3,7 @@ const bcrypt = require("bcrypt");
 const Patient = require("../models/patientSchema");
 let jsonFile = require("jsonfile");
 const path = require("path");
+const users = require('./admin');
 const { authToken } = require("./getHashedPassword");
 //The Controller Bellow is for the admin login post request
 
@@ -41,8 +42,13 @@ exports.postAdminLogin = async (fields, res, next) => {
       };
 
       jsonFile.writeFileSync(path.join(__dirname, "../", "users.json"), data);
+      let info = users.getAll();
 
-      res.render("adminpage");
+      info.then((val)=>{
+        console.log('edfdgal',new Object(val));
+        res.render("admin/profile", {val:JSON.parse(val)});
+      })
+     
     }
   else
     res.redirect("/adminlogin");
