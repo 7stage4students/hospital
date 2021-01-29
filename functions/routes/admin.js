@@ -22,6 +22,7 @@ router.use(express.json())
             return;
         }
         else{
+           if(files);
             console.log(fields);
             auth.postAdminLogin(fields,res,null);
         }
@@ -40,10 +41,10 @@ router.use(express.json())
 router.get('/patients/all',(req, res) =>{
     console.log('Getting all ');
     console.log(req.user)
-    if (req.user){
+    if (req.user)
         getAll(res);
-    }else
-    res.render('adminlogin');     
+    else
+         res.render('adminlogin');     
 
 })
 
@@ -76,10 +77,10 @@ router.get('/patient/:id',( req, res )=>{
    });
 
     router.patch('/update/:id',( req, res )=>{
-        if (req.user){
+        if (req.user)
             res.render('Updating a user')
-        }else
-            res.redirect('/admin/login');
+        else
+            res.render('/admin/login');
        
     });
 
