@@ -37,9 +37,7 @@ app.get('/login',(req,res)=>{
 app.get('/signup',(req,res)=>{
     res.render('register')
 })
-app.get('/signup',(req,res)=>{
-    res.render('register')
-})
+
 app.use('/admin', adminRouter);
 app.use('/user', userRouter)
 app.use('/test',testRoute)
